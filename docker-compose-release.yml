@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+
+    balasolu:
+        build:
+            context: .
+            dockerfile: etc/docker/balasolu-release.Dockerfile
+            target: runner
+        restart: always
+
+    nginx:
+        depends_on:
+            - balasolu
+        build:
+            context: .
+            dockerfile: etc/docker/nginx-release.Dockerfile
+        ports:
+            - 80:80
+            - 443:443
+        restart: always
+
+volumes:
+
+    balasolu-ssl:
+        external: true
