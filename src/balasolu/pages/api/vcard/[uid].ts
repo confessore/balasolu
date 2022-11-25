@@ -5,7 +5,7 @@ import { useDocument } from 'react-firebase-hooks/firestore';
 import { firestore } from '../../../lib/firebaseApp';
 import { createClient } from 'redis'
 
-type Doc = {
+type DocData = {
   vcard: string
 }
 
@@ -29,26 +29,27 @@ export default async function handler(
                 if (value) {
                     res.setHeader('Content-Type', 'text/x-vcard; charset=utf-8');
                     res.setHeader('Content-Disposition', 'inline; filename="vcard.vcf"');
-                    res.send((JSON.parse(value) as Doc).vcard.replaceAll("_n", "\n"));
+                    res.send((JSON.parse(value) as DocData).vcard.replaceAll("_n", "\n"));
                     await client.quit();
                     break;
                 }
                 const vcardColRef = collection(firestore, "vcards");
                 const vcardDocRef = doc(vcardColRef, uid as string);
-                const vcard = await getDoc(vcardDocRef);
-                await client.set(key, JSON.stringify((vcard.data() as Doc).vcard), { EX: 3600 });
+                const vcardDoc = await getDoc(vcardDocRef);
+                const vcardDocData = (vcardDoc.data() as DocData);
+                await client.set(key, JSON.stringify(vcardDocData), { EX: 3600 });
                 res.setHeader('Content-Type', 'text/x-vcard; charset=utf-8');
                 res.setHeader('Content-Disposition', 'inline; filename="vcard.vcf"');
-                res.send((vcard.data() as Doc).vcard.replaceAll("_n", "\n"));
+                res.send(vcardDocData.vcard.replaceAll("_n", "\n"));
                 await client.quit();
                 break;
             }
             case 'POST': {
                 const vcardColRef = collection(firestore, "vcards");
                 const vcardDocRef = doc(vcardColRef, uid as string);
-                const vcard = { vcard: req.body.replaceAll("\n", "_n") as string};
-                await setDoc(vcardDocRef, vcard);
-                await client.set(key, JSON.stringify(vcard), { EX: 3600 });
+                const vcardDocData = { vcard: req.body.replaceAll("\n", "_n") as string};
+                await setDoc(vcardDocRef, vcardDocData);
+                await client.set(key, JSON.stringify(vcardDocData), { EX: 3600 });
                 res.send("OK");
                 await client.quit();
                 break;
