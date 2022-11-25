@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "libs/sendgrid.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/sendgrid.js", "pages/api/auth/[...nextauth].js"],
   "exclude": ["node_modules"]
 }
