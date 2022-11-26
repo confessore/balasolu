@@ -13,6 +13,9 @@ const Layout = () => {
         <div className="flex flex-col justify-center items-center">
             <Header />
             <div className="justify-center items-center m-1 p-1">
+            {(error) &&
+                <div>{error.message}</div>
+            }
             {(loading) &&
                 <div className="text-md">
                     loading...

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Bars3Icon from '@heroicons/react/24/outline/Bars3Icon';
-import about from '../about.gif';
 
 interface IProps {
 
@@ -37,7 +36,7 @@ export default class Header extends Component<IProps, IState> {
                             we&apos;re glad you&apos;re here
                         </div>
                         <div className="text-zinc-700 dark:text-zinc-500">
-                            🎃
+                            🐧
                         </div>
                     </div>
                 </div>
