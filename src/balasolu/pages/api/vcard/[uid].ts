@@ -29,7 +29,7 @@ export default async function handler(
                 if (value) {
                     res.setHeader('Content-Type', 'text/x-vcard; charset=utf-8');
                     res.setHeader('Content-Disposition', 'inline; filename="vcard.vcf"');
-                    res.send((JSON.parse(value) as DocData).vcard.replaceAll("_n", "\n"));
+                    res.status(200).send((JSON.parse(value) as DocData).vcard.replaceAll("_n", "\n"));
                     await client.quit();
                     break;
                 }
@@ -40,27 +40,27 @@ export default async function handler(
                 await client.set(key, JSON.stringify(vcardDocData), { EX: 3600 });
                 res.setHeader('Content-Type', 'text/x-vcard; charset=utf-8');
                 res.setHeader('Content-Disposition', 'inline; filename="vcard.vcf"');
-                res.send(vcardDocData.vcard.replaceAll("_n", "\n"));
+                res.status(200).send(vcardDocData.vcard.replaceAll("_n", "\n"));
                 await client.quit();
                 break;
             }
             case 'POST': {
-                const vcardColRef = collection(firestore, "vcards");
-                const vcardDocRef = doc(vcardColRef, uid as string);
-                const vcardDocData = { vcard: req.body.replaceAll("\n", "_n") as string};
-                await setDoc(vcardDocRef, vcardDocData);
-                await client.set(key, JSON.stringify(vcardDocData), { EX: 3600 });
-                res.send("OK");
+                const vcardDocData = { vcard: req.body.replaceAll("\n", "_n") as string };
+                const vcardDocDataString = JSON.stringify(vcardDocData);
+                await client.set(key, vcardDocDataString, { EX: 3600 });
+                res.status(200).send(vcardDocDataString);
                 await client.quit();
                 break;
             }
             default: {
+                res.status(404);
                 await client.quit();
                 break;
             }
         }
     }
     catch (e) {
+        res.status(500);
         await client.quit();
         console.error(e);
     }
