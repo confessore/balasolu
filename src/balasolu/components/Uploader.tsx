@@ -1,5 +1,6 @@
 import { User } from "firebase/auth";
 import { collection, doc, setDoc } from "firebase/firestore";
+import { userAgent } from "next/server";
 import { stringify } from "querystring";
 import { useState } from "react";
 import { firestore } from "../lib/firebaseApp";
@@ -45,11 +46,13 @@ const Uploader = (props: Model) => {
       {(sent) &&
         <div className="flex flex-col content-center items-center m-1 p-1">
           <h4>vcard was uploaded</h4>
+          <h4>and by the way, your uid is {props.user.uid}</h4>
         </div>
       }
       {(!sent) &&
         <div className="flex flex-col content-center items-center m-1 p-1">
           <h4>select vcard for upload</h4>
+          <h4>and by the way, your uid is {props.user.uid}</h4>
           <input type="file" accept=".vcf,.vcard" name="vcard" onChange={uploadToClient} className="m-1 p-1" />
           {(vcard) &&
             <button
