@@ -4,6 +4,9 @@ import { firestore } from "../lib/firebaseApp";
 import Image from "next/image"
 import Uploader from "./Uploader";
 import LogoutButton from "./LogoutButton";
+import PaypalSolo from "./PaypalSolo";
+import PaypalReducer from "./PaypalReducer";
+import Candle from "./Candle";
 
 interface Model {
     user: User;
