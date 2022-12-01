@@ -19,14 +19,12 @@ interface Model {
 const Authenticated = (props: Model) => {
     
     return (
-        <>
-            <div className="flex flex-col content-center items-center m-1 p-1">
-                <LogoutButton />
-                <Uploader user={props.user}  />
-                <TapCards imgsrc={""} highlight={"standard size"} description={"durable for carrying and every day sharing"} price={9} uid={props.user.uid} />
-                <TapStickers imgsrc={""} highlight={"quarter size"} description={"adhesive and great for calls to action"} price={3} uid={props.user.uid} />
-            </div>
-        </>
+        <div className="flex flex-col justify-center items-center m-1 p-1">
+            <LogoutButton />
+            <Uploader user={props.user}  />
+            <TapCards imgsrc={""} highlight={"standard size"} description={"durable for carrying and every day sharing"} price={9} uid={props.user.uid} />
+            <TapStickers imgsrc={""} highlight={"quarter size"} description={"adhesive and great for calls to action"} price={3} uid={props.user.uid} />
+        </div>
     );
 }
 

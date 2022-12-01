@@ -42,18 +42,18 @@ const Uploader = (props: Model) => {
   };
 
   return (
-    <>
+    <div className="flex justify-center items-center m-1 p-1">
       {(sent) &&
-        <div className="flex flex-col content-center items-center m-1 p-1">
+        <div className="flex flex-col justify-center items-center m-1 p-1">
           <h4>vcard was uploaded</h4>
           <h4>and by the way, your uid is {props.user.uid}</h4>
         </div>
       }
       {(!sent) &&
-        <div className="flex flex-col content-center items-center m-1 p-1">
+        <div className="flex flex-col justify-center items-center m-1 p-1">
           <h4>select vcard for upload</h4>
           <h4>and by the way, your uid is {props.user.uid}</h4>
-          <input type="file" accept=".vcf,.vcard" name="vcard" onChange={uploadToClient} className="m-1 p-1" />
+          <input type="file" accept=".vcf,.vcard" name="vcard" onChange={uploadToClient} className="w-64 m-1 p-1" />
           {(vcard) &&
             <button
               className="px-4 py-1 m-1 text-sm text-rose-500 
@@ -61,14 +61,13 @@ const Uploader = (props: Model) => {
               hover:text-white hover:bg-rose-500 hover:border-transparent 
               focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"
               type="submit"
-              onClick={uploadToServer}
-            >
+              onClick={uploadToServer}>
               upload vcard
             </button>
           }
         </div>
       }
-    </>
+    </div>
   );
 }
 
