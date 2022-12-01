@@ -42,7 +42,7 @@ const Uploader = (props: Model) => {
   };
 
   return (
-    <div className="flex justify-center items-center m-1 p-1">
+    <div className="flex justify-center items-center m-1 p-1 bg-zinc-200 dark:bg-zinc-800 bg-opacity-90">
       {(sent) &&
         <div className="flex flex-col justify-center items-center m-1 p-1">
           <h4>vcard was uploaded</h4>
