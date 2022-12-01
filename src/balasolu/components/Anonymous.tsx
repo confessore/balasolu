@@ -23,7 +23,7 @@ const Anonymous = () => {
                     <Service icon={<CakeIcon />} title="the cake is not a lie" highlight="scout's honor 🙋‍♂️" description="we throw mad cake parties" />
                 </div>
                 <Emailer />
-                <Candle name={"candles"} imgsrc={""} highlight={"that's right. we're selling candles"} description={"made with 100% soy wax"} price={15} />
+                <Candle name={"that's right. we're selling candles"} imgsrc={""} highlight={"100% soy wax"} description={"8oz hand poured all natural soy wax candles"} price={15} />
                 <FirebaseAuth className="flex w-auto h-auto m-1 p-1" firebaseAuth={auth} uiConfig={uiConfig()} />
             </div>
         </>

@@ -10,7 +10,7 @@ interface IProps {
     price: number
 }
 
-const Candle = (props: IProps) => {
+const ProductSolo = (props: IProps) => {
     const [name, setName] = useState(props.name);
     const [imgsrc, setImgsrc] = useState(props.imgsrc);
     const [highlight, setHighlight] = useState(props.highlight);
@@ -18,13 +18,13 @@ const Candle = (props: IProps) => {
     const [type, setType] = useState("");
     const [price, setPrice] = useState(props.price);
     const [quantity, setQuantity] = useState(1);
-    const paypal_description = `${quantity} ${type} ${quantity > 1 ? "candles" : "candle"}`
+    const paypal_description = `${quantity} ${type} ${name}`;
 
     return (
-        <div className="md:flex w-full md:w-fit h-auto rounded-xl items-center m-1 p-8 md:p-0 bg-zinc-200 dark:bg-zinc-800 bg-opacity-90">
+        <div className="md:flex w-full h-auto md:w-fit rounded-xl items-center m-1 p-8 md:p-0 bg-zinc-200 dark:bg-zinc-800 bg-opacity-90">
             <div className="md:pl-6 text-center space-y-4">
                 <span>
-                    <Image src={imgsrc} alt="candle" className="w-24 h-24 md:w-28 md:h-auto md:rounded-none rounded-full mx-auto" />
+                    <Image src={imgsrc} alt="" className="w-24 h-24 md:w-28 md:h-auto md:rounded-none rounded-full mx-auto" />
                 </span>
             </div>
             <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
@@ -41,15 +41,8 @@ const Candle = (props: IProps) => {
                         {description}
                     </div>
                     <div className="text-indigo-500 dark:text-indigo-400">
-                        roughly ${price} each and free shipping!
+                        ${price} each and free shipping!
                     </div>
-                    <select name="type" id="type" onChange={(event) => setType(event.target.value)}>
-                        <option value="pumpkin pecan waffle">pumpkin pecan waffle</option>
-                        <option value="spiced apple">spiced apple</option>
-                        <option value="forest pine">forest pine</option>
-                        <option value="sugar cookie">sugar cookie</option>
-                        <option value="vanilla">vanilla</option>
-                    </select>
                     <select name="quantity" id="quantity" onChange={(event) => setQuantity(Number(event.target.value))}>
                         <option value={1}>1</option>
                         <option value={2}>2</option>
@@ -71,7 +64,7 @@ const Candle = (props: IProps) => {
     );
 }
 
-export default Candle;
+export default ProductSolo
 
 export async function getServerSideProps() {
 
