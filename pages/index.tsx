@@ -23,7 +23,14 @@ export default function Home() {
           priority
           className="invert" />
           <strong className={`${inter.className} text-slate-400`}>we&apos;ll handle the nerd stuff</strong>
-          <a href="sms:+1(352)234-3458" className={`${inter.className} text-amber-400`}><strong>+1 (352) 234 3458</strong></a>
+          <div className="pt-3 text-center">
+            <p className={`${inter.className}`}>Central Florida</p>
+            <a href="sms:+1(352)234-3458" className={`${inter.className} text-amber-400`}><strong>+1 (352) 234 3458</strong></a>
+          </div>
+          <div className="pt-3 text-center">
+            <p className={`${inter.className}`}>Northeast Florida</p>
+            <a href="sms:+1(352)234-3458" className={`${inter.className} text-amber-400`}><strong>+1 (904) 853 0345</strong></a>
+          </div>
       </div>
     </>
   )
