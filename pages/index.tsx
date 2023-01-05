@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <div className="pt-3 text-center">
             <p className={`${inter.className}`}>Northeast Florida</p>
-            <a href="sms:+1(352)234-3458" className={`${inter.className} text-amber-400`}><strong>+1 (904) 853 0345</strong></a>
+            <a href="sms:+1(904)853-0345" className={`${inter.className} text-amber-400`}><strong>+1 (904) 853 0345</strong></a>
           </div>
       </div>
     </>
