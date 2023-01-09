@@ -31,6 +31,27 @@ export default function Home() {
             <p className={`${inter.className} text-sm`}>Northeast Florida</p>
             <a href="sms:+1(904)853-0345" className={`${inter.className} text-emerald-500 text-lg`}><strong>(904) 853 0345</strong></a>
           </div>
+          <div className="flex gap-3 py-5 justify-center items-center w-full">
+            <div className="flex flex-col text-center">
+              <Image
+                src="/milkdrunk.png"
+                alt="North Central Florida Driving Academy"
+                width={96}
+                height={96}
+                className="rounded-xl" />
+                <p>coming soon!</p>
+            </div>
+            <a
+              href="https://ncflda.com"
+              target="_blank">
+              <Image
+                src="/ncflda.png"
+                alt="North Central Florida Driving Academy"
+                width={128}
+                height={128} 
+                className="rounded-xl" />
+              </a>
+            </div>
       </div>
     </>
   )
