@@ -43,7 +43,8 @@ export default function Home() {
             </div>
             <a
               href="https://ncflda.com"
-              target="_blank">
+              target="_blank"
+              rel="noopener noreferrer">
               <Image
                 src="/ncflda.png"
                 alt="North Central Florida Driving Academy"
