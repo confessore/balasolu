@@ -24,11 +24,11 @@ export default function Home() {
           className="invert" />
           <strong className={`${inter.className} text-slate-400`}>we&apos;ll handle the nerd stuff</strong>
           <div className="pt-3 text-center">
-            <p className={`${inter.className} text-sm`}>North Central Florida</p>
+            <p className={`${inter.className} text-sm text-slate-200`}>North Central Florida</p>
             <a href="sms:+1(352)234-3458" className={`${inter.className} text-emerald-500 text-lg`}><strong>(352) 234 3458</strong></a>
           </div>
           <div className="pt-3 text-center">
-            <p className={`${inter.className} text-sm`}>Northeast Florida</p>
+            <p className={`${inter.className} text-sm text-slate-200`}>Northeast Florida</p>
             <a href="sms:+1(904)853-0345" className={`${inter.className} text-emerald-500 text-lg`}><strong>(904) 853 0345</strong></a>
           </div>
           <div className="flex gap-3 py-5 justify-center items-center w-full">
@@ -39,7 +39,7 @@ export default function Home() {
                 width={96}
                 height={96}
                 className="rounded-xl" />
-                <p>coming soon!</p>
+                <p className="text-slate-200">coming soon!</p>
             </div>
             <a
               href="https://ncflda.com"
