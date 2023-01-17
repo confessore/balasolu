@@ -31,7 +31,7 @@ export default function Home() {
             <p className={`${inter.className} text-sm text-slate-200`}>Northeast Florida</p>
             <a href="sms:+1(904)853-0345" className={`${inter.className} text-emerald-500 text-lg`}><strong>(904) 853 0345</strong></a>
           </div>
-          <div className="flex gap-3 py-5 justify-center items-center w-full">
+          <div className="flex flex-wrap gap-3 py-5 justify-center items-center w-full">
             <div className="flex flex-col text-center">
               <Image
                 src="/milkdrunk.png"
@@ -48,6 +48,17 @@ export default function Home() {
               <Image
                 src="/ncflda.png"
                 alt="North Central Florida Driving Academy"
+                width={128}
+                height={128} 
+                className="rounded-xl" />
+              </a>
+              <a
+              href="https://therightcareer.org"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src="/ccs.png"
+                alt="Community and Career Solutions"
                 width={128}
                 height={128} 
                 className="rounded-xl" />
