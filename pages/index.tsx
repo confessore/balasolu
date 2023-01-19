@@ -70,8 +70,8 @@ export default function Home() {
               <Image
                 src="/noodsplease.png"
                 alt="noods please."
-                width={128}
-                height={128} 
+                width={96}
+                height={96} 
                 className="rounded-xl" />
             </a>
           </div>
