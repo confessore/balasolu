@@ -35,7 +35,7 @@ export default function Home() {
             <div className="flex flex-col text-center">
               <Image
                 src="/milkdrunk.png"
-                alt="North Central Florida Driving Academy"
+                alt="milkdrunk"
                 width={96}
                 height={96}
                 className="rounded-xl" />
@@ -51,8 +51,8 @@ export default function Home() {
                 width={128}
                 height={128} 
                 className="rounded-xl" />
-              </a>
-              <a
+            </a>
+            <a
               href="https://therightcareer.org"
               target="_blank"
               rel="noopener noreferrer">
@@ -62,8 +62,19 @@ export default function Home() {
                 width={128}
                 height={128} 
                 className="rounded-xl" />
-              </a>
-            </div>
+            </a>
+            <a
+              href="https://noodsplease.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Image
+                src="/noodsplease.png"
+                alt="noods please."
+                width={128}
+                height={128} 
+                className="rounded-xl" />
+            </a>
+          </div>
       </div>
     </>
   )
