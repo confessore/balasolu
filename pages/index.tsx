@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Balanced Solutions Software, Inc.</title>
+        <title>Balanced Solutions Software</title>
         <meta name="description" content="we'll handle the nerd stuff" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
