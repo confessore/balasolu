@@ -11,24 +11,24 @@ const what = [
 
 const who = [
     "Website development is for businesses, organizations, and individuals who need a website to achieve their online goals. Here are some common use cases for website development:",
-    "1. Startups and small businesses: Website development is a crucial aspect for startups and small businesses to establish their online presence, reach their target audience, and compete with larger companies.",
-    "2. E-commerce businesses: Online businesses need a functional and user-friendly website to sell their products and services, manage their online store, and reach their target audience.",
-    "3. Enterprises: Enterprises need a robust and scalable website to reach their target audience, build their brand, and achieve their marketing goals.",
-    "4. Bloggers and influencers: Bloggers and influencers need a website to build their online presence, reach their target audience, and grow their audience.",
-    "5. Non-profit organizations: Non-profit organizations need a website to reach their target audience, build their brand, and achieve their mission.",
-    "6. Freelancers and solopreneurs: Freelancers and solopreneurs need a website to showcase their work, reach their target audience, and attract clients.",
-    "7. Government agencies and institutions: Government agencies and institutions need a website to provide information and services to the public, improve transparency, and increase engagement.",
+    "• Startups and small businesses: Website development is a crucial aspect for startups and small businesses to establish their online presence, reach their target audience, and compete with larger companies.",
+    "• E-commerce businesses: Online businesses need a functional and user-friendly website to sell their products and services, manage their online store, and reach their target audience.",
+    "• Enterprises: Enterprises need a robust and scalable website to reach their target audience, build their brand, and achieve their marketing goals.",
+    "• Bloggers and influencers: Bloggers and influencers need a website to build their online presence, reach their target audience, and grow their audience.",
+    "• Non-profit organizations: Non-profit organizations need a website to reach their target audience, build their brand, and achieve their mission.",
+    "• Freelancers and solopreneurs: Freelancers and solopreneurs need a website to showcase their work, reach their target audience, and attract clients.",
+    "• Government agencies and institutions: Government agencies and institutions need a website to provide information and services to the public, improve transparency, and increase engagement.",
     "In short, website development is for any organization or individual who needs a website to achieve their online goals and reach their target audience.",
 ]
 
 const how = [
     "Here are some reasons why investing in website development can benefit you:",
-    "1. Improved online presence: A well-designed website helps establish your brand and improve your online presence, making it easier for potential customers to find you.",
-    "2. Increased credibility: A professional website demonstrates credibility and trust, which can help you stand out in a competitive market and attract more customers.",
-    "3. Better user experience: A well-designed website provides a better user experience, making it easier for visitors to find the information they need and take action, such as making a purchase or filling out a contact form.",
-    "4. Cost-effective marketing: Your website can serve as an effective marketing tool, helping you reach a wider audience and generate leads at a lower cost than traditional marketing methods.",
-    "5. 24/7 availability: A website is available 24/7, allowing customers to access information and engage with your business at any time, even when you're not open for business.",
-    "6. Data tracking: Website analytics allow you to track visitor behavior and make data-driven decisions to improve your online marketing efforts and maximize ROI.",
+    "• Improved online presence: A well-designed website helps establish your brand and improve your online presence, making it easier for potential customers to find you.",
+    "• Increased credibility: A professional website demonstrates credibility and trust, which can help you stand out in a competitive market and attract more customers.",
+    "• Better user experience: A well-designed website provides a better user experience, making it easier for visitors to find the information they need and take action, such as making a purchase or filling out a contact form.",
+    "• Cost-effective marketing: Your website can serve as an effective marketing tool, helping you reach a wider audience and generate leads at a lower cost than traditional marketing methods.",
+    "• 24/7 availability: A website is available 24/7, allowing customers to access information and engage with your business at any time, even when you're not open for business.",
+    "• Data tracking: Website analytics allow you to track visitor behavior and make data-driven decisions to improve your online marketing efforts and maximize ROI.",
     "In short, investing in website development can help you reach more customers, establish credibility, provide a better user experience, and effectively market your business online."
 ]
 

@@ -12,22 +12,22 @@ const what = [
 const who = [
     "Cloud hosting is for organizations of all sizes that want to leverage the benefits of cloud computing, including scalability, cost savings, increased reliability, improved security, access to cutting-edge technology, and global reach.",
     "Here are some common use cases for cloud hosting:",
-    "Startups and small businesses: For small businesses, cloud hosting can provide access to the same technology and resources as larger enterprises, without the need for significant upfront investments in hardware and infrastructure.",
-    "E-commerce and online businesses: Cloud hosting is well-suited for online businesses, as it enables you to easily handle fluctuations in traffic and handle large amounts of data and transactions.",
-    "Enterprises: For larger enterprises, cloud hosting can provide a cost-effective way to modernize their IT infrastructure and access the latest technologies and services.",
-    "Applications and software companies: Cloud hosting provides a platform for software companies and developers to build, test, and deploy their applications, and access the latest tools and services to improve their operations.",
-    "Media and entertainment companies: For media and entertainment companies, cloud hosting provides a way to store, manage, and distribute large amounts of data and content, and serve a global audience.",
+    "• Startups and small businesses: For small businesses, cloud hosting can provide access to the same technology and resources as larger enterprises, without the need for significant upfront investments in hardware and infrastructure.",
+    "• E-commerce and online businesses: Cloud hosting is well-suited for online businesses, as it enables you to easily handle fluctuations in traffic and handle large amounts of data and transactions.",
+    "• Enterprises: For larger enterprises, cloud hosting can provide a cost-effective way to modernize their IT infrastructure and access the latest technologies and services.",
+    "• Applications and software companies: Cloud hosting provides a platform for software companies and developers to build, test, and deploy their applications, and access the latest tools and services to improve their operations.",
+    "• Media and entertainment companies: For media and entertainment companies, cloud hosting provides a way to store, manage, and distribute large amounts of data and content, and serve a global audience.",
     "In short, cloud hosting is suitable for organizations of all sizes that want to leverage the benefits of cloud computing, and meet the challenges of today's fast-paced and data-driven business environment.",
 ]
 
 const how = [
     "Here are some reasons why investing in cloud hosting can benefit you:",
-    "1. Scalability: Cloud hosting allows you to easily scale your resources up or down as needed, giving you the flexibility to handle fluctuations in traffic and business growth.",
-    "2. Cost savings: Cloud hosting can help you reduce costs compared to traditional on-premises hosting, as you only pay for the resources you use and don't have to invest in hardware and infrastructure.",
-    "3. Increased reliability: Cloud hosting provides multiple layers of redundancy and automatic failover, ensuring high availability and minimizing downtime.",
-    "4. Improved security: Cloud hosting providers offer robust security features and regularly update their systems to protect against emerging threats, giving you peace of mind that your data is secure.",
-    "5. Access to cutting-edge technology: Cloud hosting providers offer a range of cutting-edge technologies and services that can help you innovate and improve your business operations.",
-    "6. Global reach: Cloud hosting enables you to serve customers anywhere in the world, without having to worry about the complexities of setting up and maintaining data centers in different locations.",
+    "• Scalability: Cloud hosting allows you to easily scale your resources up or down as needed, giving you the flexibility to handle fluctuations in traffic and business growth.",
+    "• Cost savings: Cloud hosting can help you reduce costs compared to traditional on-premises hosting, as you only pay for the resources you use and don't have to invest in hardware and infrastructure.",
+    "• Increased reliability: Cloud hosting provides multiple layers of redundancy and automatic failover, ensuring high availability and minimizing downtime.",
+    "• Improved security: Cloud hosting providers offer robust security features and regularly update their systems to protect against emerging threats, giving you peace of mind that your data is secure.",
+    "• Access to cutting-edge technology: Cloud hosting providers offer a range of cutting-edge technologies and services that can help you innovate and improve your business operations.",
+    "• Global reach: Cloud hosting enables you to serve customers anywhere in the world, without having to worry about the complexities of setting up and maintaining data centers in different locations.",
     "In short, investing in cloud hosting can help you achieve scalability, cost savings, increased reliability, improved security, access to cutting-edge technology, and global reach for your business."
 ]
 

@@ -10,23 +10,23 @@ const what = [
 const who = [
     "Search engine optimization (SEO) is for businesses, organizations, and individuals who want to improve their online visibility, attract more organic traffic to their website, and achieve their marketing goals.",
     "Here are some common use cases for SEO:",
-    "1. Startups and small businesses: SEO is an effective way for startups and small businesses to reach their target audience and compete with larger companies in search results.",
-    "2. E-commerce and online businesses: Online businesses can use SEO to drive more organic traffic to their website, improve their search engine rankings, and increase sales.",
-    "3. Enterprises: Enterprises can use SEO to improve their online visibility, reach new customers, and drive leads and sales.",
-    "4. Bloggers and influencers: SEO is also for bloggers and influencers who want to reach a larger audience and build their online presence.",
-    "5. Non-profit organizations: Non-profit organizations can use SEO to reach their target audience, build their brand, and achieve their mission.",
-    "6. Content marketers: Content marketers use SEO to improve the ranking and visibility of their content in search results, reach their target audience, and achieve their marketing goals.",
+    "• Startups and small businesses: SEO is an effective way for startups and small businesses to reach their target audience and compete with larger companies in search results.",
+    "• E-commerce and online businesses: Online businesses can use SEO to drive more organic traffic to their website, improve their search engine rankings, and increase sales.",
+    "• Enterprises: Enterprises can use SEO to improve their online visibility, reach new customers, and drive leads and sales.",
+    "• Bloggers and influencers: SEO is also for bloggers and influencers who want to reach a larger audience and build their online presence.",
+    "• Non-profit organizations: Non-profit organizations can use SEO to reach their target audience, build their brand, and achieve their mission.",
+    "• Content marketers: Content marketers use SEO to improve the ranking and visibility of their content in search results, reach their target audience, and achieve their marketing goals.",
     "In short, SEO is for organizations and individuals who want to improve their online visibility, attract more organic traffic, and achieve their marketing goals through search engine optimization."
 ]
 
 const how = [
     "Here are some reasons why investing in search engine optimization (SEO) can benefit you:",
-    "1. Increased visibility: SEO helps improve your website's visibility on search engines, making it easier for potential customers to find you when they search for keywords related to your business.",
-    "2. Better user experience: SEO focuses on improving the user experience, which can help increase engagement and reduce bounce rates, leading to better rankings and more organic traffic.",
-    "3. Cost-effective marketing: SEO is a cost-effective marketing strategy compared to paid advertising, as it helps you reach a wider audience organically and build a sustainable online presence over time.",
-    "4. Increased credibility: A higher search engine ranking can increase your credibility and trust, making it more likely that people will visit your website and consider doing business with you.",
-    "5. Data tracking: SEO metrics allow you to track the effectiveness of your optimization efforts and make data-driven decisions to continually improve your online marketing efforts and maximize ROI.",
-    "6. Long-term results: Unlike paid advertising, the benefits of SEO are long-lasting and can continue to drive traffic and generate leads for your business for years to come.",
+    "• Increased visibility: SEO helps improve your website's visibility on search engines, making it easier for potential customers to find you when they search for keywords related to your business.",
+    "• Better user experience: SEO focuses on improving the user experience, which can help increase engagement and reduce bounce rates, leading to better rankings and more organic traffic.",
+    "• Cost-effective marketing: SEO is a cost-effective marketing strategy compared to paid advertising, as it helps you reach a wider audience organically and build a sustainable online presence over time.",
+    "• Increased credibility: A higher search engine ranking can increase your credibility and trust, making it more likely that people will visit your website and consider doing business with you.",
+    "• Data tracking: SEO metrics allow you to track the effectiveness of your optimization efforts and make data-driven decisions to continually improve your online marketing efforts and maximize ROI.",
+    "• Long-term results: Unlike paid advertising, the benefits of SEO are long-lasting and can continue to drive traffic and generate leads for your business for years to come.",
     "In short, investing in SEO can help you increase visibility, improve the user experience, cost-effectively reach a wider audience, establish credibility, track performance, and achieve long-term results for your business."
 ]
 
