@@ -70,6 +70,7 @@ const Content = () => {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </Head>
+      <h1>{title}</h1>
       <div className={`${grid}`}>
         <InfoCard 
           header="What is content writing anyway?"
