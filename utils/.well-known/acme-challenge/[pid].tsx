@@ -1,4 +1,4 @@
-import clientPromise from '../../../libs/mongo_client_promise'
+import clientPromise from '../../../lib/mongo_client_promise'
 import React from 'react'
 
 
