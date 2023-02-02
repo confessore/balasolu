@@ -19,7 +19,7 @@ const who = [
   "5. Content marketers: Content marketers use content writing to create and publish high-quality, relevant, and engaging content to reach their target audience and achieve their marketing goals.",
   "6. Bloggers and influencers: Content writing is also for bloggers and influencers who want to create high-quality, engaging content for their followers and build their brand.",
   "In short, content writing is for organizations and individuals who want to improve their online presence, build their brand, engage their audience, and drive leads and sales through effective content marketing.",
-  
+
 ]
 
 const how = [
@@ -43,6 +43,16 @@ const grid_2xl = "2xl:grid-cols-2xl"
 const title = "Content Writing - Balanced Solutions Software"
 const description = how[7]
 
+const structuredData = {
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "brand": "Balanced Solutions Software",
+  "logo": "https://balasolu.com/balasolu.svg",
+  "name": "Content Writing",
+  "category": "Services",
+  "description": `${description}`,
+}
+
 const Content = () => {
   return (
     <>
@@ -55,7 +65,10 @@ const Content = () => {
           content={description} />
         <meta
             property="og:image"
-            content="https://balasolu.com/favicon.ico" />
+            content="https://balasolu.com/favicon/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </Head>
       <div className={`${grid}`}>
         <InfoCard 

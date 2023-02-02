@@ -1,10 +1,53 @@
 import Head from 'next/head'
 
+const description = "We shall handle the nerd stuff. Based in Ocala Florida we provide Digital Marketing and Content Writing services as well as Application Development and Cloud Hosting Services."
+
+const structuredData = {
+  "@context": "http://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Balanced Solutions Software",
+  "url": "https://balasolu.com",
+  "logo": "https://balasolu.com/balasolu.svg",
+  "description": `${description}`,
+  "telephone": "+13522343458",
+  "currenciesAccepted": "USD, BTC, ETH, LTC, XRP, XLM",
+  "paymentAccepted": "Cash, Credit Card, Cryptocurrency",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1515 E Silver Springs Blvd Ste 110",
+    "addressLocality": "Ocala",
+    "addressRegion": "FL",
+    "postalCode": "34470",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "12:00"
+    },
+  ],
+}
+
 const Meta = () => {
   return (
     <Head>
         <title>Balanced Solutions Software</title>
-        <meta name="description" content="We shall handle the nerd stuff. Based in Ocala Florida we provide Digital Marketing and Content Writing services as well as Application Development and Cloud Hosting Services." />
+        <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
         rel="apple-touch-icon"
@@ -35,6 +78,9 @@ const Meta = () => {
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <meta property="og:image" content="/balasolu.svg" />
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     </Head>
   )
 }

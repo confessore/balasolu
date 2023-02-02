@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import InfoCard from '../components/info_card'
-import Layout from '../components/layout'
 
 const what = [
     "Search engine optimization (SEO) is the process of optimizing a website to improve its ranking and visibility in search engine results pages (SERPs). SEO involves a variety of tactics, including keyword research, on-page optimization, technical optimization, link building, and more, to help a website rank higher in search results and attract more organic traffic.",
@@ -41,6 +40,16 @@ const grid_2xl = "2xl:grid-cols-2xl"
 const title = "Search Engine Optimization (SEO) - Balanced Solutions Software"
 const description = how[7]
 
+const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "brand": "Balanced Solutions Software",
+    "logo": "https://balasolu.com/balasolu.svg",
+    "name": "Search Engine Optimization (SEO)",
+    "category": "Services",
+    "description": `${description}`,
+}
+
 const SEO = () => {
   return (
     <>
@@ -53,7 +62,10 @@ const SEO = () => {
           content={description} />
         <meta
             property="og:image"
-            content="https://balasolu.com/favicon.ico" />
+            content="https://balasolu.com/favicon/favicon.ico" />
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </Head>
       <div className={`${grid}`}>
         <InfoCard 

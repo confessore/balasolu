@@ -41,6 +41,16 @@ const grid_2xl = "2xl:grid-cols-2xl"
 const title = "Cloud Hosting (AWS, GCP, Azure) - Balanced Solutions Software"
 const description = how[7]
 
+const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "brand": "Balanced Solutions Software",
+    "logo": "https://balasolu.com/balasolu.svg",
+    "name": "Cloud Hosting (AWS, GCP, Azure)",
+    "category": "Services",
+    "description": `${description}`,
+  }
+
 const Cloud = () => {
   return (
     <>
@@ -53,7 +63,10 @@ const Cloud = () => {
           content={description} />
         <meta
             property="og:image"
-            content="https://balasolu.com/favicon.ico" />
+            content="https://balasolu.com/favicon/favicon.ico" />
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </Head>
       <div className={`${grid}`}>
         <InfoCard 

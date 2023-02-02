@@ -4,6 +4,7 @@ import Logo from './logo'
 import Meta from './meta'
 import NavCards from './nav_cards'
 import { Akshar } from '@next/font/google'
+import Network from './network'
 
 const akshar = Akshar({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ const Layout = ({ children }: Props) => {
         </div>
         <Logo />
         <NavCards />
+        <Network />
       </main>
       <Footer />
     </>

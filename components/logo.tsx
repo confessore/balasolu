@@ -18,7 +18,7 @@ const Logo = () => {
                         width={256}
                         priority
                         className="invert" />
-                    <strong className={`text-black`}>we shall handle the nerd stuff.</strong>   
+                    <strong className={`text-black`}>we shall handle the nerd stuff</strong>   
                 </Link>
             </div>
         </>
