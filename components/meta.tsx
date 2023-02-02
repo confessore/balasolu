@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 
 const Meta = () => {
   return (
     <Head>
-        <title>Balanced Solutions Software, Inc.</title>
-        <meta name="description" content="we'll handle the nerd stuff" />
+        <title>Balanced Solutions Software</title>
+        <meta name="description" content="We shall handle the nerd stuff. Based in Ocala Florida we provide Digital Marketing and Content Writing services as well as Application Development and Cloud Hosting Services." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
         rel="apple-touch-icon"
