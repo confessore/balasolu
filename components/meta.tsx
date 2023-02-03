@@ -52,19 +52,19 @@ const Meta = () => {
         <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/favicon/favicon.ico"
+        href="/favicon/apple-touch-icon.ico"
         />
         <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/favicon/favicon.ico"
+        href="/favicon/favicon32.ico"
         />
         <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/favicon/favicon.ico"
+        href="/favicon/favicon16.ico"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link

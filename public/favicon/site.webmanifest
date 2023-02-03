@@ -1,14 +1,14 @@
 {
-  "name": "Balanced Solutions Software, Inc.",
+  "name": "Balanced Solutions Software",
   "short_name": "balasolu",
   "icons": [
     {
-      "src": "/favicons/favicon.ico",
+      "src": "/favicons/apple-touch-icon.ico",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicons/favicon.ico",
+      "src": "/favicons/favicon500.ico",
       "sizes": "512x512",
       "type": "image/png"
     }
