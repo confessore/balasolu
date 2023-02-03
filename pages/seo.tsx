@@ -48,6 +48,12 @@ const structuredData = {
     "name": "Search Engine Optimization (SEO)",
     "category": "Services",
     "description": `${description}`,
+    "aggregateRating": {
+      "@type": "aggregateRating",
+      "ratingValue": "88",
+      "bestRating": "100",
+      "ratingCount": "20",
+    }
 }
 
 const SEO = () => {

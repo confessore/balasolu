@@ -51,6 +51,12 @@ const structuredData = {
   "name": "Content Writing",
   "category": "Services",
   "description": `${description}`,
+  "aggregateRating": {
+    "@type": "aggregateRating",
+    "ratingValue": "88",
+    "bestRating": "100",
+    "ratingCount": "20",
+  }
 }
 
 const Content = () => {

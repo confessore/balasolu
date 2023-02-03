@@ -49,6 +49,12 @@ const structuredData = {
     "name": "Cloud Hosting (AWS, GCP, Azure)",
     "category": "Services",
     "description": `${description}`,
+    "aggregateRating": {
+      "@type": "aggregateRating",
+      "ratingValue": "88",
+      "bestRating": "100",
+      "ratingCount": "20",
+    }
   }
 
 const Cloud = () => {
