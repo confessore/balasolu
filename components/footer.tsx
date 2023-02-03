@@ -1,5 +1,6 @@
 import Container from './container'
-import { BG_COLOR, EXAMPLE_PATH } from '../lib/constants'
+import Image from 'next/image'
+import Balasolu from './balasolu'
 
 const Footer = () => {
   return (
@@ -25,6 +26,7 @@ const Footer = () => {
           </div>
         </div>
       </Container>
+      <Balasolu />
     </footer>
   )
 }
