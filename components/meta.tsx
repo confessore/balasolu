@@ -77,6 +77,9 @@ const Meta = () => {
         <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <meta
+          property="og:description"
+          content={description} />
         <meta property="og:image" content="/balasolu.svg" />
         <script
             type="application/ld+json"
