@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const description = "We shall handle the nerd stuff. Based in Ocala Florida we provide Digital Marketing and Content Writing services as well as Application Development and Cloud Hosting services. We nurture small and large business growth by providing meaningful information to search engines and vigilantly monitoring analytics. We are growers. We sow seeds with structured linked data and then reap rewards of impressions, clicks and business for your businesses."
+const description = "We shall handle the nerd stuff. Based in Ocala Florida we provide Digital Marketing and Content Writing services as well as Application Development and Cloud Hosting services."
 
 const structuredData = {
   "@context": "http://schema.org",
