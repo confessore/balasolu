@@ -1,6 +1,6 @@
-import NextAuth from "next-auth"
-import DiscordProvider from "next-auth/providers/discord"
-import clientPromise from "../../../lib/mongo_client_promise"
+import NextAuth from 'next-auth'
+import DiscordProvider from 'next-auth/providers/discord'
+import clientPromise from '../../../lib/mongo_client_promise'
 
 export const authOptions = {
   // Configure one or more authentication providers
@@ -23,19 +23,19 @@ export const authOptions = {
         })
         const json = await response.json()
         const client = await clientPromise
-        const db = client.db("phanta")
-        const filter = { _id: json["id"] }
+        const db = client.db('phanta')
+        const filter = { _id: json['id'] }
         const doc = {
-          _id: json["id"],
+          _id: json['id'],
           _updated: Date.now(),
           _accessToken: token.accessToken,
-          user: json
+          user: json,
         }
-        const exists = await db.collection("users").findOne(filter)
+        const exists = await db.collection('users').findOne(filter)
         if (exists) {
-          const post = await db.collection("users").replaceOne(filter, doc)
+          const post = await db.collection('users').replaceOne(filter, doc)
         } else {
-          const post = await db.collection("users").insertOne(doc)
+          const post = await db.collection('users').insertOne(doc)
         }
       }
       return token
@@ -44,8 +44,8 @@ export const authOptions = {
       // Send properties to the client, like an access_token from a provider.
       session.accessToken = token.accessToken
       return session
-    }
-  }
+    },
+  },
 }
 
 export default NextAuth(authOptions)

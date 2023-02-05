@@ -31,4 +31,12 @@
     <loc>https://balasolu.com/_document</loc>
     <changefreq>hourly</changefreq>
   </url>
+  <url>
+    <loc>https://balasolu.com/posts/[slug]</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://balasolu.com/studio/[[...index]]</loc>
+    <changefreq>hourly</changefreq>
+  </url>
 </urlset>
