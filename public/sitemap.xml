@@ -1,42 +1,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://balasolu.com/cloud</loc>
+    <loc>https://dev.balasolu.com:3000/cloud</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com/content</loc>
+    <loc>https://dev.balasolu.com:3000/content</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com</loc>
+    <loc>https://dev.balasolu.com:3000</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com/profile</loc>
+    <loc>https://dev.balasolu.com:3000/profile</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com/seo</loc>
+    <loc>https://dev.balasolu.com:3000/seo</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com/websites</loc>
+    <loc>https://dev.balasolu.com:3000/websites</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com/_app</loc>
+    <loc>https://dev.balasolu.com:3000/_app</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com/_document</loc>
+    <loc>https://dev.balasolu.com:3000/_document</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com/posts/[slug]</loc>
+    <loc>https://dev.balasolu.com:3000/posts/[slug]</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://balasolu.com/studio/[[...index]]</loc>
+    <loc>https://dev.balasolu.com:3000/studio/[[...index]]</loc>
     <changefreq>hourly</changefreq>
   </url>
 </urlset>

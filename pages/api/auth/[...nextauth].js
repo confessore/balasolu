@@ -23,7 +23,7 @@ export const authOptions = {
         })
         const json = await response.json()
         const client = await clientPromise
-        const db = client.db('phanta')
+        const db = client.db('balasolu')
         const filter = { _id: json['id'] }
         const doc = {
           _id: json['id'],
@@ -46,6 +46,7 @@ export const authOptions = {
       return session
     },
   },
+  secret: process.env.JWT_SECRET,
 }
 
 export default NextAuth(authOptions)
