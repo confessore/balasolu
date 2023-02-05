@@ -1,5 +1,4 @@
 import React from 'react'
-import { BG_COLOR, TEXT_COLOR } from '../lib/constants'
 
 export const header_mobile = "fixed flex w-full h-16 justify-center items-center z-10 bg-fuchsia-200 text-pink-900 opacity-60 py-5"
 export const header_mobile_dark = `dark:bg-fuchsia-900 dark:text-pink-200`
