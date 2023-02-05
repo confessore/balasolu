@@ -12,6 +12,10 @@
     <changefreq>hourly</changefreq>
   </url>
   <url>
+    <loc>https://balasolu.com/profile</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
     <loc>https://balasolu.com/seo</loc>
     <changefreq>hourly</changefreq>
   </url>
