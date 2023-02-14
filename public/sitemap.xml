@@ -32,11 +32,11 @@
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/posts/[slug]</loc>
+    <loc>https://dev.balasolu.com:3000/studio/[[...index]]</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/studio/[[...index]]</loc>
+    <loc>https://dev.balasolu.com:3000/posts/[slug]</loc>
     <changefreq>hourly</changefreq>
   </url>
 </urlset>
