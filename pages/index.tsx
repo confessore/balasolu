@@ -1,30 +1,63 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import { PreviewSuspense } from '@sanity/preview-kit'
+import IndexPage from 'components/IndexPage'
+import { getAllPosts, getSettings } from 'lib/sanity.client'
+import { Post, Settings } from 'lib/sanity.queries'
+import { GetStaticProps } from 'next'
+import { lazy } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+const PreviewIndexPage = lazy(() => import('components/PreviewIndexPage'))
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Balanced Solutions Software, Inc.</title>
-        <meta name="description" content="we'll handle the nerd stuff" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div className="flex flex-col justify-center items-center h-screen w-screen">
-        <Image
-          src="/balasolu.svg"
-          alt="balasolu"
-          height={256}
-          width={256}
-          priority
-          className="invert" />
-          <p className={`${inter.className} text-slate-400`}>we&apos;ll handle the nerd stuff</p>
-          <a href="sms:+1(352)234-3458" className={`${inter.className} text-amber-400`}><strong>+1 (352) 234 3458</strong></a>
-      </div>
-    </>
-  )
+interface PageProps {
+  posts: Post[]
+  settings: Settings
+  preview: boolean
+  token: string | null
+}
+
+interface Query {
+  [key: string]: string
+}
+
+interface PreviewData {
+  token?: string
+}
+
+export default function Page(props: PageProps) {
+  const { posts, settings, preview, token } = props
+
+  if (preview) {
+    return (
+      <PreviewSuspense
+        fallback={
+          <IndexPage loading preview posts={posts} settings={settings} />
+        }
+      >
+        <PreviewIndexPage token={token} />
+      </PreviewSuspense>
+    )
+  }
+
+  return <IndexPage posts={posts} settings={settings} />
+}
+
+export const getStaticProps: GetStaticProps<
+  PageProps,
+  Query,
+  PreviewData
+> = async (ctx) => {
+  const { preview = false, previewData = {} } = ctx
+
+  const [settings, posts = []] = await Promise.all([
+    getSettings(),
+    getAllPosts(),
+  ])
+
+  return {
+    props: {
+      posts,
+      settings,
+      preview,
+      token: previewData.token ?? null,
+    },
+  }
 }
