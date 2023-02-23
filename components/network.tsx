@@ -41,7 +41,14 @@ const Logo = () => {
             className="rounded-xl"
           />
         </a>
-        <div className="flex flex-col text-center">
+      </div>
+    </>
+  )
+}
+
+export default Logo
+
+/*<div className="flex flex-col text-center">
           <Image
             src="/milkdrunk.png"
             alt="milkdrunk"
@@ -50,10 +57,4 @@ const Logo = () => {
             className="rounded-xl"
           />
           <p className="text-pink-900 dark:text-pink-200">coming soon!</p>
-        </div>
-      </div>
-    </>
-  )
-}
-
-export default Logo
+        </div>*/
