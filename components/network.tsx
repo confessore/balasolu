@@ -34,7 +34,7 @@ const Logo = () => {
           rel="noopener noreferrer"
         >
           <Image
-            src="/de.jpg"
+            src="/de.png"
             alt="Appropriate Technology, Inc"
             width={96}
             height={96}
