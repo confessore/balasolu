@@ -29,6 +29,19 @@ const Logo = () => {
           />
         </a>
         <a
+          href="https://www.aptec-inc.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/de.jpg"
+            alt="Appropriate Technology, Inc"
+            width={128}
+            height={128}
+            className="rounded-xl"
+          />
+        </a>
+        <a
           href="https://noodsplease.com"
           target="_blank"
           rel="noopener noreferrer"
