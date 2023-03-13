@@ -36,8 +36,8 @@ const Logo = () => {
           <Image
             src="/de.jpg"
             alt="Appropriate Technology, Inc"
-            width={128}
-            height={128}
+            width={96}
+            height={96}
             className="rounded-xl"
           />
         </a>
