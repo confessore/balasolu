@@ -5,6 +5,7 @@ const nextConfig = {
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
       { hostname: 'source.unsplash.com' },
+      { hostname: 'repository-images.githubusercontent.com' },
     ],
   },
   webpack: (config, { isServer }) => {

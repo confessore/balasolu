@@ -67,6 +67,19 @@ const Logo = () => {
             className="rounded-xl"
           />
         </a>
+        <a
+          href="https://github.com/confessore/rexmit"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="https://repository-images.githubusercontent.com/538283283/d59b0b4f-63a7-429a-a5b7-44d067245e0c"
+            alt="rexmit"
+            width={96}
+            height={96}
+            className="rounded-xl"
+          />
+        </a>
       </div>
     </>
   )
