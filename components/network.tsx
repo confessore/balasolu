@@ -55,19 +55,6 @@ const Logo = () => {
           />
         </a>
         <a
-          href="https://azuremy.st"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/azuremyst.png"
-            alt="Azuremyst"
-            width={96}
-            height={96}
-            className="rounded-xl"
-          />
-        </a>
-        <a
           href="https://github.com/confessore/rexmit"
           target="_blank"
           rel="noopener noreferrer"
