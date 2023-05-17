@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import rexmit_mongo_client_promise from '../../lib/rexmit_mongo_client_promise'
+import Paypal from 'components/buttons/paypal';
 
 
 export default function Page(props) {
@@ -9,6 +10,7 @@ export default function Page(props) {
       <p>_id: {props._id}</p>
       <p>name: {props.name}</p>
       <p>expiration: {props.expiration}</p>
+      <Paypal />
     </>
   );
 }

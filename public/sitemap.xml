@@ -36,6 +36,10 @@
     <changefreq>hourly</changefreq>
   </url>
   <url>
+    <loc>https://dev.balasolu.com:3000/rexmit/[id]</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
     <loc>https://dev.balasolu.com:3000/studio/[[...index]]</loc>
     <changefreq>hourly</changefreq>
   </url>
