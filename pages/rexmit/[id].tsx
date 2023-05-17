@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import rexmit_mongo_client_promise from '../../lib/rexmit_mongo_client_promise'
-import Paypal from 'components/buttons/paypal';
+import Paypal from 'components/rexmit/paypal';
 
 
 export default function Page(props) {

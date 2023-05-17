@@ -1,5 +1,5 @@
 import { Mulish } from '@next/font/google'
-import Discord from 'components/buttons/discord'
+import Discord from 'components/rexmit/discord'
 import { signIn, useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
