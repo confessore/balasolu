@@ -8,17 +8,17 @@ import { SessionProvider } from 'next-auth/react'
 
 export default function App({
   Component,
-  pageProps: { session, ...pageProps },
+  pageProps: { /*session,*/ ...pageProps },
 }: AppProps) {
   return (
     <>
-      <SessionProvider session={session}>
         <GoogleAnalytics trackPageViews />
         <Layout>
           <Component {...pageProps} />
         </Layout>
         <Tawk />
-      </SessionProvider>
     </>
   )
 }
+
+/*<SessionProvider session={session}></SessionProvider>*/
