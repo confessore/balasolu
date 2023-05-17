@@ -42,19 +42,6 @@ const Logo = () => {
           />
         </a>
         <a
-          href="https://noodsplease.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/noodsplease.png"
-            alt="noods please."
-            width={96}
-            height={96}
-            className="rounded-xl"
-          />
-        </a>
-        <a
           href="https://github.com/confessore/rexmit"
           target="_blank"
           rel="noopener noreferrer"
