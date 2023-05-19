@@ -27,9 +27,10 @@ type Props = {
         };
         description: string;
     }[],
-    total: number
+    total: number,
     name: string,
-    telephone: string
+    telephone: string,
+    guild_id?: string,
 }
 
 type Style = {
@@ -50,6 +51,7 @@ const PaypalReducer = (props: Props) => {
     // This is the main reason to wrap the PayPalButtons in a new component
     const [{options, isPending}, dispatch] = usePayPalScriptReducer();
     const [succeeded, setSucceeded] = useState(false);
+    const [guild_id, set_guild_id] = useState(props.guild_id);
     const [paypalErrorMessage, setPaypalErrorMessage] = useState("");
     const [orderId, setOrderId] = useState(false);
     const [billingDetails, setBillingDetails] = useState("");
@@ -83,9 +85,10 @@ const PaypalReducer = (props: Props) => {
     // handles when a payment is confirmed by paypal
     const onApprove = (data: any, actions: any) => {
         return actions.order.capture().then(function (details: any) {
-        const {payer} = details;
-        setBillingDetails(payer);
-        setSucceeded(true);
+            const {payer} = details;
+            setBillingDetails(payer);
+            setSucceeded(true);
+            guild_id
         })
     };
 

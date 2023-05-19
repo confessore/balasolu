@@ -1,10 +1,6 @@
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import React, { useEffect, useState } from 'react'
-import styles from '../styles/Default.module.css'
-import ProductSolo from './product_solo'
 import PaypalReducer from './paypal_reducer'
-
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,8 +8,9 @@ type Props = {
     url?: string,
     blank?: boolean,
     header?: string,
-    content?: string
-    packages?: (string | number)[][]
+    content?: string,
+    packages?: (string | number)[][],
+    guild_id?: string,
 }
 
 const reservation_options = [
@@ -75,7 +72,7 @@ const Reservations = (props: Props) => {
     const getItems = () => {
         let items = [
             createItem(
-                getSelectedPackageName(),
+                `${getSelectedPackageName()} | ${props.guild_id}`,
                 1,
                 createAmount(getSelectedPackagePrice()),
                 getSelectedPackageName()
@@ -144,7 +141,7 @@ const Reservations = (props: Props) => {
                         </p>
                     </div>
                     <div className="rounded-xl bg-white p-5">
-                        <PaypalReducer currency={''} showSpinner={false} item={''} type={''} amount={total} quantity={0} items={items} total={total} name={''} telephone={''} />
+                        <PaypalReducer currency={''} showSpinner={false} item={''} type={''} amount={total} quantity={0} items={items} total={total} name={''} telephone={''} guild_id={props.guild_id}/>
                     </div>
                 </div>
             </div>
