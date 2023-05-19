@@ -19,6 +19,8 @@ export default function Page(props) {
         <p className='text-2xl'>oops! that guild was not found in the database</p>
       </>
     }
+    <p>{props.reservations_count}</p>
+    <p></p>
     </>
   );
 }
@@ -37,7 +39,17 @@ export async function getServerSideProps(context) {
     name = document_with_id["name"].toString();
     expiration = document_with_id["expiration"].toString();
   }
+  let reservations_count = await count_guilds_with_reservations();
   return {
-    props: { _id, id: context.query.id, name, expiration }, // will be passed to the page component as props
+    props: { reservations_count, _id, id: context.query.id, name, expiration }, // will be passed to the page component as props
   };
+}
+
+async function count_guilds_with_reservations() {
+  let rexmit_mongo_client = await rexmit_mongo_client_promise;
+  let db = rexmit_mongo_client.db("rexmit");
+  let collection = db.collection("guilds");
+  const filter = { "expiration": { "$gt": new Date().getUTCDate().toString() } };
+  const count = await collection.countDocuments(filter);
+  return count
 }
