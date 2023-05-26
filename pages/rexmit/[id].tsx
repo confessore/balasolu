@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import rexmit_mongo_client_promise from '../../lib/rexmit_mongo_client_promise'
-import Paypal from 'components/rexmit/paypal';
+import Pricing from 'components/rexmit/pricing';
 
 
 export default function Page(props) {
@@ -11,7 +11,7 @@ export default function Page(props) {
         <p>_id: {props._id}</p>
         <p>name: {props.name}</p>
         <p>expiration: {props.expiration}</p>
-        <Paypal guild_id={props.id} />
+        <Pricing />
       </>
     }
     {props._id == "" &&

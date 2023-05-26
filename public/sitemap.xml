@@ -1,46 +1,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dev.balasolu.com:3000/_app</loc>
+    <loc>http://dev.balasolu.com:3000/cloud</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/_document</loc>
+    <loc>http://dev.balasolu.com:3000/content</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/cloud</loc>
+    <loc>http://dev.balasolu.com:3000</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/content</loc>
+    <loc>http://dev.balasolu.com:3000/rexmit</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000</loc>
+    <loc>http://dev.balasolu.com:3000/seo</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/rexmit</loc>
+    <loc>http://dev.balasolu.com:3000/websites</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/seo</loc>
+    <loc>http://dev.balasolu.com:3000/_app</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/websites</loc>
+    <loc>http://dev.balasolu.com:3000/_document</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/posts/[slug]</loc>
+    <loc>http://dev.balasolu.com:3000/posts/[slug]</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/rexmit/[id]</loc>
+    <loc>http://dev.balasolu.com:3000/rexmit/[id]</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://dev.balasolu.com:3000/studio/[[...index]]</loc>
+    <loc>http://dev.balasolu.com:3000/studio/[[...index]]</loc>
     <changefreq>hourly</changefreq>
   </url>
 </urlset>
