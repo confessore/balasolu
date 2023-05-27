@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import Stripe from 'stripe';
 import { Readable } from 'node:stream';
 import { stripe } from '../../../utils/stripe';
+import rexmit_mongo_client_promise from '../../../lib/rexmit_mongo_client_promise'
 
 // Stripe requires the raw body to construct the event.
 export const config = {
@@ -79,7 +80,30 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
               );
             }*/
             if (checkoutSession.mode === 'payment') {
-              console.log(checkoutSession.metadata.customer_id)
+              let rexmit_mongo_client = await rexmit_mongo_client_promise;
+              let db = rexmit_mongo_client.db("rexmit");
+              let collection = db.collection("guilds");
+              const filter = { id: checkoutSession.metadata.customer_id };
+              const document_with_id = await collection.findOne(filter);
+              let _id = "";
+              let name = "";
+              let expiration = "";
+              if (document_with_id != null) {
+                _id = document_with_id["_id"].toString();
+                name = document_with_id["name"].toString();
+                expiration = document_with_id["expiration"].toString();
+                if (is_reserved(expiration)) {
+                  let expiration_date = new Date(expiration);
+                  expiration_date.setUTCMonth(expiration_date.getUTCMonth() + 1);
+                  let update = { "$set": { expiration: expiration_date.toISOString() } };
+                  let document_modify_result = await collection.findOneAndUpdate(filter, update);
+                } else {
+                  let expiration_date = new Date();
+                  expiration_date.setUTCMonth(expiration_date.getUTCMonth() + 1);
+                  let update = { "$set": { expiration: expiration_date.toISOString() } };
+                  let document_modify_result = await collection.findOneAndUpdate(filter, update);
+                }
+              }
             }
             break;
           default:
@@ -99,5 +123,9 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     res.status(405).end('Method Not Allowed');
   }
 };
+
+function is_reserved(iso_date_string: string): boolean {
+  return new Date(iso_date_string) > new Date()
+}
 
 export default webhookHandler;

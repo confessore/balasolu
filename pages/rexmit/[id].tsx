@@ -48,13 +48,13 @@ export async function getServerSideProps(context) {
   let _id = "";
   let name = "";
   let expiration = "";
+  let reserved = false;
   if (document_with_id != null) {
     _id = document_with_id["_id"].toString();
     name = document_with_id["name"].toString();
     expiration = document_with_id["expiration"].toString();
+    reserved = is_reserved(expiration);
   }
-  let reserved = is_reserved(expiration);
-  console.log(reserved);
   let reservations_count = await count_guilds_with_reservations();
   return {
     props: { reserved, reservations_count, _id, id: context.query.id, name, expiration }, // will be passed to the page component as props
