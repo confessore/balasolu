@@ -4,12 +4,13 @@ import { getURL } from '../../../utils/helpers';
 
 const CreateCheckoutSession: NextApiHandler = async (req, res) => {
   if (req.method === 'POST') {
-    const { price_id, quantity = 1, metadata = {} } = req.body;
+    const { price_id, customer_id, quantity = 1, metadata = {} } = req.body;
 
     try {
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         billing_address_collection: 'required',
+        metadata: { customer_id },
         line_items: [
           {
             price: price_id,

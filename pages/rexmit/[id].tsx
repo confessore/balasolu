@@ -11,7 +11,7 @@ export default function Page(props) {
         <p>_id: {props._id}</p>
         <p>name: {props.name}</p>
         <p>expiration: {props.expiration}</p>
-        <Pricing />
+        <Pricing guild_id={props.id} />
       </>
     }
     {props._id == "" &&

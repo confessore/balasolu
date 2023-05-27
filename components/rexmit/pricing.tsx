@@ -11,7 +11,7 @@ import { Price, ProductWithPrice } from 'types';
 
 type BillingInterval = 'year' | 'month';
 
-export default function Pricing() {
+export default function Pricing(props) {
   const router = useRouter();
   const [billingInterval, setBillingInterval] =
     useState<BillingInterval>('month');
@@ -21,7 +21,10 @@ export default function Pricing() {
     try {
       const { sessionId } = await postData({
         url: '/api/rexmit/checkout',
-        data: { price_id: "price_1LQCgeLbQoCnScgfuNe2PXp9" }
+        data: { 
+          price_id: "price_1LQCgeLbQoCnScgfuNe2PXp9", 
+          customer_id: props.guild_id 
+        }
       });
 
       const stripe = await getStripe();

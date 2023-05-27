@@ -79,7 +79,7 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
               );
             }*/
             if (checkoutSession.mode === 'payment') {
-
+              console.log(checkoutSession.metadata.customer_id)
             }
             break;
           default:
