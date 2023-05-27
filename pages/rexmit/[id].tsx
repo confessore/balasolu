@@ -49,7 +49,8 @@ async function count_guilds_with_reservations() {
   let rexmit_mongo_client = await rexmit_mongo_client_promise;
   let db = rexmit_mongo_client.db("rexmit");
   let collection = db.collection("guilds");
-  const filter = { "expiration": { "$gt": new Date().getUTCDate().toString() } };
+  const filter = { "expiration": { "$gt": new Date().toISOString() } };
+  console.log(filter);
   const count = await collection.countDocuments(filter);
   return count
 }

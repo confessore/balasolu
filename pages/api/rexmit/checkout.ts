@@ -19,8 +19,8 @@ const CreateCheckoutSession: NextApiHandler = async (req, res) => {
         ],
         mode: 'payment',
         allow_promotion_codes: true,
-        success_url: `${getURL()}/account`,
-        cancel_url: `${getURL()}/`
+        success_url: `${getURL()}/rexmit/${customer_id}`,
+        cancel_url: `${getURL()}/rexmit/${customer_id}`
       });
 
       return res.status(200).json({ sessionId: session.id });
