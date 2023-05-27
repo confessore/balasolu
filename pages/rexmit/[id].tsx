@@ -6,12 +6,28 @@ import Pricing from 'components/rexmit/pricing';
 export default function Page(props) {
   return (
     <>
-    {props._id != "" &&
+
+    {props._id != "" && props.reserved &&
       <>
+        <p>a reservation exists</p>
         <p>_id: {props._id}</p>
         <p>name: {props.name}</p>
         <p>expiration: {props.expiration}</p>
         <Pricing guild_id={props.id} />
+      </>
+    }
+    {props._id != "" && !props.reserved && props.reservations_count < 10 &&
+      <>
+        <p>a reservation does not exist</p>
+        <p>_id: {props._id}</p>
+        <p>name: {props.name}</p>
+        <p>expiration: {props.expiration}</p>
+        <Pricing guild_id={props.id} />
+      </>
+    }
+    {props._id != "" && !props.reserved && props.reservations_count >= 10 &&
+      <>
+        <p className='text-2xl'>oops! we are operating at capacity right now. please check back later</p>
       </>
     }
     {props._id == "" &&
@@ -19,8 +35,6 @@ export default function Page(props) {
         <p className='text-2xl'>oops! that guild was not found in the database</p>
       </>
     }
-    <p>{props.reservations_count}</p>
-    <p></p>
     </>
   );
 }
@@ -39,9 +53,11 @@ export async function getServerSideProps(context) {
     name = document_with_id["name"].toString();
     expiration = document_with_id["expiration"].toString();
   }
+  let reserved = is_reserved(expiration);
+  console.log(reserved);
   let reservations_count = await count_guilds_with_reservations();
   return {
-    props: { reservations_count, _id, id: context.query.id, name, expiration }, // will be passed to the page component as props
+    props: { reserved, reservations_count, _id, id: context.query.id, name, expiration }, // will be passed to the page component as props
   };
 }
 
@@ -50,7 +66,10 @@ async function count_guilds_with_reservations() {
   let db = rexmit_mongo_client.db("rexmit");
   let collection = db.collection("guilds");
   const filter = { "expiration": { "$gt": new Date().toISOString() } };
-  console.log(filter);
   const count = await collection.countDocuments(filter);
   return count
+}
+
+function is_reserved(iso_date_string: string): boolean {
+  return new Date(iso_date_string) > new Date()
 }
