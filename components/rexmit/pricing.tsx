@@ -22,7 +22,7 @@ export default function Pricing(props) {
       const { sessionId } = await postData({
         url: '/api/rexmit/checkout',
         data: { 
-          price_id: "price_1LQCgeLbQoCnScgfuNe2PXp9", 
+          price_id: "price_1NEMdMLbQoCnScgf6LHq7S3y", 
           customer_id: props.guild_id 
         }
       });
