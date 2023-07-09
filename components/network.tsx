@@ -6,28 +6,6 @@ const Logo = () => {
   return (
     <>
       <div className="flex w-full flex-wrap items-center justify-center gap-3 py-5">
-        <a href="https://ncflda.com" target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/ncflda.png"
-            alt="North Central Florida Driving Academy"
-            width={128}
-            height={128}
-            className="rounded-xl"
-          />
-        </a>
-        <a
-          href="https://therightcareer.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/ccs.png"
-            alt="Community and Career Solutions"
-            width={128}
-            height={128}
-            className="rounded-xl"
-          />
-        </a>
         <a
           href="https://www.aptec-inc.org"
           target="_blank"
