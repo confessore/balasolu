@@ -32,6 +32,19 @@ const Logo = () => {
             className="rounded-xl"
           />
         </a>
+        <a
+          href="https://twinstar-bosskills.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="https://twinstar-bosskills.vercel.app/twinstar.png"
+            alt="TwinStar"
+            width={96}
+            height={96}
+            className="rounded-xl"
+          />
+        </a>
       </div>
     </>
   )
