@@ -6,6 +6,7 @@ const nextConfig = {
       { hostname: 'cdn.sanity.io' },
       { hostname: 'source.unsplash.com' },
       { hostname: 'repository-images.githubusercontent.com' },
+      { hostname: 'twinstar-bosskills.vercel.app' },
     ],
   },
   webpack: (config, { isServer }) => {
