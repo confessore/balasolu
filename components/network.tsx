@@ -52,7 +52,7 @@ const Logo = () => {
         >
           <Image
             src="https://balasolu.com/favicon/favicon.ico"
-            alt="balasolu"
+            alt="tequila"
             width={96}
             height={96}
             className="rounded-xl"
