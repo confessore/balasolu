@@ -45,6 +45,19 @@ const Logo = () => {
             className="rounded-xl"
           />
         </a>
+        <a
+          href="https://tequila.balasolu.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="https://balasolu.com/favicon/favicon.ico"
+            alt="balasolu"
+            width={96}
+            height={96}
+            className="rounded-xl"
+          />
+        </a>
       </div>
     </>
   )
