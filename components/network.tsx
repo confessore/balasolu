@@ -51,7 +51,7 @@ const Logo = () => {
           rel="noopener noreferrer"
         >
           <Image
-            src="https://balasolu.com/favicon/favicon.ico"
+            src="/favicon/favicon.ico"
             alt="tequila"
             width={96}
             height={96}
