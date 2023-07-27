@@ -58,6 +58,19 @@ const Logo = () => {
             className="rounded-xl"
           />
         </a>
+        <a
+          href="https://thereightcareer.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/ccs.png"
+            alt="Community and Career Solutions"
+            width={96}
+            height={96}
+            className="rounded-xl"
+          />
+        </a>
       </div>
     </>
   )
