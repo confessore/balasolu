@@ -35,7 +35,11 @@ export default function Page() {
         className="rounded-full"
       />
       <div className={`${grid}`}>
-        <InfoCard header="The Ethical Salesman" content={content} />
+        <InfoCard
+          title="The Ethical Salesman"
+          content={content}
+          hidden={true}
+        />
       </div>
       <Logo />
       <NavGroup />

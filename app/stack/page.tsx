@@ -93,12 +93,12 @@ export default function Page() {
         />
       </div>
       <div className={`${grid}`}>
-        <InfoCard header="JavaScript" content={javascript} />
-        <InfoCard header="TypeScript" content={typescript} />
-        <InfoCard header="React" content={react} />
-        <InfoCard header="C#" content={csharp} />
-        <InfoCard header="Rust" content={rust} />
-        <InfoCard header="Docker" content={docker} />
+        <InfoCard title="JavaScript" content={javascript} hidden={true} />
+        <InfoCard title="TypeScript" content={typescript} hidden={true} />
+        <InfoCard title="React" content={react} hidden={true} />
+        <InfoCard title="C#" content={csharp} hidden={true} />
+        <InfoCard title="Rust" content={rust} hidden={true} />
+        <InfoCard title="Docker" content={docker} hidden={true} />
       </div>
       <Logo />
       <NavGroup />

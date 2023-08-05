@@ -30,7 +30,7 @@ export default function Page() {
       <Overlay />
       <h1>Reach</h1>
       <div className={`${grid}`}>
-        <InfoCard header="The Tech Whisperer" content={content} />
+        <InfoCard title="The Tech Whisperer" content={content} hidden={true} />
       </div>
       <Logo />
       <NavGroup />

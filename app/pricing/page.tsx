@@ -35,8 +35,12 @@ export default function Page() {
       <Overlay />
       <h1>Pricing</h1>
       <div className={`${grid}`}>
-        <InfoCard header="Website Development" content={development} />
-        <InfoCard header="Website Hosting" content={hosting} />
+        <InfoCard
+          title="Website Development"
+          content={development}
+          hidden={false}
+        />
+        <InfoCard title="Website Hosting" content={hosting} hidden={false} />
       </div>
       <Logo />
       <NavGroup />
