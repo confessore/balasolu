@@ -2,12 +2,11 @@ import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import Image from "next/image";
 
 const main =
   "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const grid = "grid grid-cols-[1fr] max-w-full justify-center py-5";
+const flex = "flex flex-col max-w-full justify-center items-center py-5";
 const content = [
   "Once upon a time in the quaint town of Harmonyville, there lived a young man named Ethan. He had a unique profession that set him apart from the rest of the townsfolk – he was an ethical salesman. Unlike the typical salespeople who were known for their aggressive upselling tactics, Ethan believed in treating everyone, especially his family, with respect and fairness.",
   "Ethan came from a close-knit family consisting of his parents, his younger sister Lily, and his grandmother, Grandma Agnes. The town had its share of pushy salespeople who often took advantage of unsuspecting customers, but Ethan was determined to prove that sales could be done differently.",
@@ -26,19 +25,11 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Family</h1>
-      <Image
-        src="/us.png"
-        alt="us"
-        height={256}
-        width={256}
-        priority
-        className="rounded-full"
-      />
-      <div className={`${grid}`}>
+      <div className={`${flex}`}>
         <InfoCard
           title="The Ethical Salesman"
           content={content}
-          hidden={true}
+          hidden={false}
         />
       </div>
       <Logo />

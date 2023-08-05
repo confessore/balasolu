@@ -49,7 +49,7 @@ export default function Network() {
         rel="noopener noreferrer"
       >
         <Image
-          src="balasolu_n.png"
+          src="/balasolu_nn.png"
           alt="tequila"
           width={160}
           height={160}

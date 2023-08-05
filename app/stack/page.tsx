@@ -7,7 +7,7 @@ import Image from "next/image";
 const main =
   "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const grid = "grid grid-cols-[1fr] max-w-full justify-center py-5";
+const flex = "flex flex-col max-w-full justify-center items-center py-5";
 const javascript = [
   "JavaScript is a high-level, dynamically typed scripting language that was originally designed for adding interactivity to web pages. It allows you to manipulate web page content, handle user interactions, and dynamically update the page without requiring a full page reload. JavaScript is primarily used in web development for both front-end and back-end tasks.",
   "Client-Side Scripting: JavaScript is mainly used on the client side, meaning it runs in a user's web browser. It enables dynamic content, form validation, animations, and more.",
@@ -78,12 +78,17 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Stack</h1>
-      <div className="flex flex-wrap justify-around items-center">
+      <div className={`${flex}`}>
         <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
+        <InfoCard title="JavaScript" content={javascript} hidden={true} />
         <Image src="/ts.svg" alt="typescript" height={96} width={96} priority />
+        <InfoCard title="TypeScript" content={typescript} hidden={true} />
         <Image src="/react.svg" alt="react" height={96} width={96} priority />
+        <InfoCard title="React" content={react} hidden={true} />
         <Image src="/csharp.svg" alt="c#" height={96} width={96} priority />
+        <InfoCard title="C#" content={csharp} hidden={true} />
         <Image src="/rust.svg" alt="rust" height={96} width={96} priority />
+        <InfoCard title="Rust" content={rust} hidden={true} />
         <Image
           src="/docker.svg"
           alt="docker"
@@ -91,13 +96,6 @@ export default function Page() {
           width={256}
           priority
         />
-      </div>
-      <div className={`${grid}`}>
-        <InfoCard title="JavaScript" content={javascript} hidden={true} />
-        <InfoCard title="TypeScript" content={typescript} hidden={true} />
-        <InfoCard title="React" content={react} hidden={true} />
-        <InfoCard title="C#" content={csharp} hidden={true} />
-        <InfoCard title="Rust" content={rust} hidden={true} />
         <InfoCard title="Docker" content={docker} hidden={true} />
       </div>
       <Logo />

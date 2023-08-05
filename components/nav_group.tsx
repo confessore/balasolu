@@ -20,6 +20,14 @@ export default function NavGroup() {
         }
       />
       <NavLink
+        href={`/people`}
+        blank={false}
+        title={"People"}
+        description={
+          "These are our people. This is where we come from. We're giving this life everything we got and then some."
+        }
+      />
+      <NavLink
         href={`/pricing`}
         blank={false}
         title={"Pricing"}
