@@ -17,7 +17,7 @@ const greater = [
 const sconfessore = [
   "What sets me apart from other people is my work ethic.",
   "For many years, working in the food industry, people on my own team would push me out of the door because my work ethic made them look bad.",
-  "Now, I bring that same work ethic to my own business which makes our competitors look bad.",
+  "Now, I bring that same work ethic to our family business which makes our competitors look bad.",
 ];
 
 const lconfessore = [""];
