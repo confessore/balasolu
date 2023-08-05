@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const info_card = "p-5 bg-pink-200 text-pink-900 rounded-xl";
 const info_card_dark = "dark:bg-pink-900 dark:text-pink-200";
@@ -11,17 +11,17 @@ type Props = {
 };
 
 const InfoCard = (props: Props) => {
+  const [hidden, setHidden] = useState(true);
+  
   return (
-    <>
-      <div className={`${info_card} ${info_card_dark}`}>
-        <h2 className={h2}>{props.header}</h2>
-        {props.content?.map((item, index) => (
-          <p key={index} className={p}>
-            {item}
-          </p>
-        ))}
-      </div>
-    </>
+    <div className={`${info_card} ${info_card_dark}`}>
+      <h2 className={h2}>{props.header}</h2>
+      {props.content?.map((item, index) => (
+        <p key={index} className={p}>
+          {item}
+        </p>
+      ))}
+    </div>
   );
 };
 
