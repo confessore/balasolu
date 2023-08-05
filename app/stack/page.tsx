@@ -4,7 +4,8 @@ import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
 import Image from "next/image";
 
-const main = "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
+const main =
+  "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
 const grid = "grid grid-cols-[1fr] max-w-full justify-center py-5";
 const javascript = [
@@ -76,21 +77,21 @@ export default function Page() {
   return (
     <main className={`${main} ${main_dark}`}>
       <Overlay />
-      <h1>Reach</h1>
+      <h1>Stack</h1>
       <div className="flex flex-wrap justify-around items-center">
-      <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
-      <Image src="/ts.svg" alt="typescript" height={96} width={96} priority />
-      <Image src="/react.svg" alt="react" height={96} width={96} priority />
-      <Image src="/csharp.svg" alt="c#" height={96} width={96} priority />
-      <Image src="/rust.svg" alt="rust" height={96} width={96} priority />
-      <Image
+        <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
+        <Image src="/ts.svg" alt="typescript" height={96} width={96} priority />
+        <Image src="/react.svg" alt="react" height={96} width={96} priority />
+        <Image src="/csharp.svg" alt="c#" height={96} width={96} priority />
+        <Image src="/rust.svg" alt="rust" height={96} width={96} priority />
+        <Image
           src="/docker.svg"
           alt="docker"
           height={96}
           width={256}
           priority
         />
-        </div>
+      </div>
       <div className={`${grid}`}>
         <InfoCard header="JavaScript" content={javascript} />
         <InfoCard header="TypeScript" content={typescript} />
