@@ -77,25 +77,27 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Reach</h1>
-      <div className={`${grid}`}>
-        <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
-        <InfoCard header="" content={javascript} />
-        <Image src="/ts.svg" alt="typescript" height={96} width={96} priority />
-        <InfoCard header="" content={typescript} />
-        <Image src="/react.svg" alt="react" height={96} width={96} priority />
-        <InfoCard header="" content={react} />
-        <Image src="/csharp.svg" alt="c#" height={96} width={96} priority />
-        <InfoCard header="" content={csharp} />
-        <Image src="/rust.svg" alt="rust" height={96} width={96} priority />
-        <InfoCard header="" content={rust} />
-        <Image
+      <div className="flex flex-wrap justify-around items-center">
+      <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
+      <Image src="/ts.svg" alt="typescript" height={96} width={96} priority />
+      <Image src="/react.svg" alt="react" height={96} width={96} priority />
+      <Image src="/csharp.svg" alt="c#" height={96} width={96} priority />
+      <Image src="/rust.svg" alt="rust" height={96} width={96} priority />
+      <Image
           src="/docker.svg"
           alt="docker"
           height={96}
           width={256}
           priority
         />
-        <InfoCard header="" content={docker} />
+        </div>
+      <div className={`${grid}`}>
+        <InfoCard header="JavaScript" content={javascript} />
+        <InfoCard header="TypeScript" content={typescript} />
+        <InfoCard header="React" content={react} />
+        <InfoCard header="C#" content={csharp} />
+        <InfoCard header="Rust" content={rust} />
+        <InfoCard header="Docker" content={docker} />
       </div>
       <Logo />
       <NavGroup />

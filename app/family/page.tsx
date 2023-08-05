@@ -2,6 +2,7 @@ import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
+import Image from "next/image"
 
 const main = "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
@@ -24,6 +25,14 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Family</h1>
+      <Image
+          src="/us.png"
+          alt="us"
+          height={256}
+          width={256}
+          priority
+          className="rounded-full"
+        />
       <div className={`${grid}`}>
         <InfoCard header="The Ethical Salesman" content={content} />
       </div>
