@@ -11,7 +11,7 @@ const flex = "flex flex-col max-w-full justify-center items-center py-5";
 const greater = [
   "We get it. Paying the other people an arm and a leg so they can call themselves CEO and VP is not doing your business any favors.",
   "We know that reaching the other people is like pulling teeth as well.",
-  "While the other people parade in luxury touting their titles, we're here for you when you need us.",
+  "While the other people parade in luxury, touting their titles, we're here for you when you need us.",
   "This is our family business. Your bread and butter is our bread and butter. Your success is our success. If you are not satisfied, we are not satisfied.",
 ];
 const sconfessore = [
