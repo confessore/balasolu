@@ -2,10 +2,10 @@ import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import { main, main_dark } from "@/styles/main";
 
+const main = "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
+const main_dark = "dark:bg-pink-900 dark:text-pink-200";
 const grid = "grid grid-cols-[1fr] max-w-full justify-center py-5";
-
 const content = [
   "In the heart of the bustling city, nestled among skyscrapers and technology hubs, there lived a man named Leo. He was known throughout the digital realm as 'The Tech Whisperer.' Leo possessed an uncanny ability to communicate with websites and online platforms, navigating their complex networks as if they were living, breathing entities.",
   "Leo's reputation had spread far and wide, and businesses from every corner of the world sought his expertise. His unique talent? Connecting with the developers and hosts behind websites and digital platforms, understanding their intricate codes, and unraveling even the most perplexing technological glitches.",

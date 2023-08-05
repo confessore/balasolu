@@ -2,10 +2,10 @@ import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import { main, main_dark } from "@/styles/main";
 
+const main = "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
+const main_dark = "dark:bg-pink-900 dark:text-pink-200";
 const grid = "grid grid-cols-[1fr] max-w-full justify-center py-5";
-
 const development = [
   "Our website development begins at a base of $60 and includes revisions. Simply reach out to us and we shall handle the nerd stuff.",
   "Typically, website development is invoiced one time only unless your particular project requires invoicing at an hourly rate over an extended period.",
@@ -18,7 +18,6 @@ const development = [
   "• $600 for a 12 page website ($50 per page or invoiceable hour)",
   "Additional pages or invoiceable hours remain fixed at $50 each.",
 ];
-
 const hosting = [
   "Our website hosting begins at a base of $60/mo and includes development revisions. Simply reach out to us and we shall handle the nerd stuff.",
   "Typically, website hosting remains at the constant base of $60/mo unless your scale breaches certain threshholds.",

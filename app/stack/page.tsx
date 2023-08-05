@@ -3,10 +3,10 @@ import Logo from "@/components/logo";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
 import Image from "next/image";
-import { main, main_dark } from "@/styles/main";
 
+const main = "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
+const main_dark = "dark:bg-pink-900 dark:text-pink-200";
 const grid = "grid grid-cols-[1fr] max-w-full justify-center py-5";
-
 const javascript = [
   "JavaScript is a high-level, dynamically typed scripting language that was originally designed for adding interactivity to web pages. It allows you to manipulate web page content, handle user interactions, and dynamically update the page without requiring a full page reload. JavaScript is primarily used in web development for both front-end and back-end tasks.",
   "Client-Side Scripting: JavaScript is mainly used on the client side, meaning it runs in a user's web browser. It enables dynamic content, form validation, animations, and more.",
@@ -14,7 +14,6 @@ const javascript = [
   "DOM Manipulation: You can use JavaScript to interact with the Document Object Model (DOM), which represents the structure of a web page.",
   "Asynchronous Operations: JavaScript supports asynchronous programming, allowing you to make network requests and handle responses without blocking the rest of your code.",
 ];
-
 const typescript = [
   "TypeScript is a superset of JavaScript that adds static typing and additional features to the language. It is designed to address some of the challenges and limitations of JavaScript, particularly in larger and more complex projects. TypeScript code is compiled into standard JavaScript that can be executed in browsers or on server-side platforms.",
   "Static Typing: TypeScript introduces static typing, which allows you to define the types of variables, function parameters, and return values. This helps catch type-related errors during development.",
@@ -22,7 +21,6 @@ const typescript = [
   "Interfaces and Classes: TypeScript supports object-oriented programming concepts, including interfaces, classes, and inheritance.",
   "Code Organization: TypeScript encourages the use of modules to better organize code and manage dependencies.",
 ];
-
 const react = [
   "React is an open-source JavaScript library developed by Facebook (now maintained by Facebook and the community) for building user interfaces, particularly for web applications. React is designed to help developers create reusable and interactive UI components that efficiently update and render in response to changes in data.",
   "Component-Based Architecture: React encourages developers to break down the user interface into small, reusable components. Each component manages its own state and can be composed to build complex UIs.",
@@ -35,7 +33,6 @@ const react = [
   "Context: React Context provides a way to share data between components without having to pass props through every level of the component tree. It's useful for sharing global data, like themes or user authentication, across components.",
   "React Router: React Router is a popular library for handling routing and navigation in React applications. It allows you to create single-page applications with multiple views and URLs.",
 ];
-
 const csharp = [
   "C# (pronounced 'C sharp') is a modern, object-oriented programming language developed by Microsoft. It was introduced in the early 2000s as part of the Microsoft .NET framework and has since become one of the key languages for building a wide range of applications, including desktop software, web applications, games, mobile apps, and more. C# is designed to be versatile, efficient, and easy to use, making it a popular choice among developers.",
   "Object-Oriented: C# is built around the principles of object-oriented programming (OOP). This means that you work with objects and classes, allowing you to model real-world entities and their behaviors in your code.",
@@ -51,7 +48,6 @@ const csharp = [
   "• Games: C# is widely used for game development in conjunction with the Unity game engine.",
   "• Cloud Services: Create cloud-based applications using Azure services.",
 ];
-
 const rust = [
   "Rust is a systems programming language that aims to provide the performance of low-level languages like C and C++ while also prioritizing memory safety, concurrency, and modern language design. It was developed by Mozilla and first released in 2010. Rust is designed to empower developers to write reliable, efficient, and safe code, particularly for systems-level and performance-critical applications.",
   "Memory Safety: One of Rust's standout features is its strong emphasis on memory safety. It enforces strict compile-time checks to prevent common programming errors like null pointer dereferences, buffer overflows, and data races, which are major sources of bugs and security vulnerabilities in other languages.",
@@ -64,7 +60,6 @@ const rust = [
   "Cargo: Cargo is Rust's official package manager and build tool. It makes it easy to manage dependencies, compile code, and run tests, contributing to a seamless development experience.",
   "Community and Ecosystem: Rust has a vibrant and growing community with a strong focus on documentation, learning resources, and open-source projects. The Rust ecosystem includes libraries and frameworks for a wide range of applications, from web development to system programming.",
 ];
-
 const docker = [
   "Docker is a platform and tool designed to make it easier to create, deploy, and run applications using containerization. Containerization is a technology that allows you to package an application and its dependencies into a single unit called a 'container.' Containers are isolated environments that can run consistently across different environments, such as development, testing, and production, without worrying about differences in underlying infrastructure.",
   "Images: An image is a lightweight, standalone, and executable software package that includes everything needed to run a piece of software, including code, runtime, system tools, system libraries, and settings. Images serve as the basis for containers.",
