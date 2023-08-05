@@ -2,6 +2,7 @@ import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
+import { main, main_dark } from "@/styles/main";
 
 const grid = "grid grid-cols-[1fr] max-w-full justify-center py-5";
 
@@ -20,7 +21,7 @@ const content = [
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-pink-200 dark:bg-pink-900">
+    <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Family</h1>
       <div className={`${grid}`}>
