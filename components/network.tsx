@@ -50,7 +50,7 @@ export default function Network() {
         rel="noopener noreferrer"
       >
         <Image
-          src="/favicon/favicon.ico"
+          src="balasolu_n.png"
           alt="tequila"
           width={160}
           height={160}
