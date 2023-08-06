@@ -7,7 +7,7 @@ import Image from "next/image";
 const main =
   "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center py-5";
+const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const javascript = [
   "JavaScript is a high-level, dynamically typed scripting language that was originally designed for adding interactivity to web pages. It allows you to manipulate web page content, handle user interactions, and dynamically update the page without requiring a full page reload. JavaScript is primarily used in web development for both front-end and back-end tasks.",
   "Client-Side Scripting: JavaScript is mainly used on the client side, meaning it runs in a user's web browser. It enables dynamic content, form validation, animations, and more.",

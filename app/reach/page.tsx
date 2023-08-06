@@ -6,7 +6,7 @@ import Overlay from "@/components/overlay";
 const main =
   "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center py-5";
+const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const close = [
   "We get it. We know that reaching the other people can be like getting teeth pulled.",
   "We're here for you because this is our family business.",

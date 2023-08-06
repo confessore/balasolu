@@ -7,7 +7,7 @@ import Image from "next/image";
 const main =
   "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center py-5";
+const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const sconfessore = [
   "What sets me apart from other people is my work ethic.",
   "For many years, working in the food industry, people on my own team would push me out of the door because my work ethic made them look bad.",

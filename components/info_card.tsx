@@ -16,7 +16,7 @@ export default function InfoCard(props: Props) {
   const [hidden, setHidden] = useState(props.hidden);
 
   return (
-    <div className={`${info_card} ${info_card_dark}`}>
+    <div className={`${info_card} ${info_card_dark} border border-gray-500`}>
       <div
         className="flex gap-x-1"
         onClick={() => {
