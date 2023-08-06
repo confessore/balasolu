@@ -12,6 +12,10 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Network</h1>
+      <p>
+        Of course we are going to link to some of the projects we are developing
+        and hosting. Here, you could find exactly those.
+      </p>
       <Network />
       <Logo />
       <NavGroup />

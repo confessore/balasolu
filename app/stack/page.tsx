@@ -78,6 +78,10 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Stack</h1>
+      <p>
+        This is not your mother&apos;s WordPress or Wix house. Our inclination
+        is to utilize more performant tooling for better customer experiences.
+      </p>
       <div className={`${flex}`}>
         <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
         <InfoCard title="JavaScript" content={javascript} hidden={true} />

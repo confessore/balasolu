@@ -34,6 +34,10 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Pricing</h1>
+      <p>
+        We wish to remain as transparent as possible about our pricing.
+        Affordable flat rates and pay-as-you-go usage is what sets us apart.
+      </p>
       <div className={`${grid}`}>
         <InfoCard
           title="Website Development"

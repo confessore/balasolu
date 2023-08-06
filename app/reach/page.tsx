@@ -6,7 +6,12 @@ import Overlay from "@/components/overlay";
 const main =
   "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const grid = "flex flex-col max-w-full justify-center items-center py-5";
+const flex = "flex flex-col max-w-full justify-center items-center py-5";
+const close = [
+  "We get it. We know that reaching the other people can be like getting teeth pulled.",
+  "We're here for you because this is our family business.",
+  "Your bread and butter is our bread and butter and your satisfaction is our satisfaction.",
+];
 const content = [
   "In the heart of the bustling city, nestled among skyscrapers and technology hubs, there lived a man named Leo. He was known throughout the digital realm as 'The Tech Whisperer.' Leo possessed an uncanny ability to communicate with websites and online platforms, navigating their complex networks as if they were living, breathing entities.",
   "Leo's reputation had spread far and wide, and businesses from every corner of the world sought his expertise. His unique talent? Connecting with the developers and hosts behind websites and digital platforms, understanding their intricate codes, and unraveling even the most perplexing technological glitches.",
@@ -29,7 +34,17 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Reach</h1>
-      <div className={`${grid}`}>
+      <p>
+        Can you reach the people who develop and host your website? We are
+        reachable by voice and text and understand that your business is your
+        bread and butter.
+      </p>
+      <div className={`${flex}`}>
+        <InfoCard
+          title="So close you could touch us..."
+          content={close}
+          hidden={false}
+        />
         <InfoCard title="The Tech Whisperer" content={content} hidden={false} />
       </div>
       <Logo />

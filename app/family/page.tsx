@@ -25,6 +25,10 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1>Family</h1>
+      <p>
+        You wouldn&apos;t try to upsell your own family so why would we? Get
+        only what you need. Nothing more. Nothing less.
+      </p>
       <div className={`${flex}`}>
         <InfoCard
           title="The Ethical Salesman"
