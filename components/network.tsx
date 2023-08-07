@@ -31,6 +31,19 @@ export default function Network() {
         />
       </a>
       <a
+        href="https://noodsplease.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src="/noodsplease.png"
+          alt="Community and Career Solutions"
+          width={160}
+          height={160}
+          className="rounded-xl"
+        />
+      </a>
+      <a
         href="https://twinstar-bosskills.vercel.app"
         target="_blank"
         rel="noopener noreferrer"
