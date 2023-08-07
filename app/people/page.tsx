@@ -81,7 +81,7 @@ export default function Page() {
           content={sconfessore}
           hidden={false}
         />
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap justify-center items-center gap-3">
           <a
             href="https://linkedin.com/in/confessore"
             target="_blank"
