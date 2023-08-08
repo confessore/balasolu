@@ -6,7 +6,7 @@ const citation = "(Rudestam & Newton, 1992, p. 3)";
 
 const Monks = () => {
   return (
-    <div className="flex flex-col w-full justify-center items-center p-12">
+    <div className="flex flex-col w-full justify-center items-center p-8">
       <p className="italic font-light text-md text-center">{monks}</p>
       <p className="font-semibold text-md text-center">{citation}</p>
     </div>
