@@ -1,4 +1,5 @@
 import Logo from "@/components/logo";
+import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Network from "@/components/network";
 import Overlay from "@/components/overlay";
@@ -19,6 +20,7 @@ export default function Page() {
       <Network />
       <Logo />
       <NavGroup />
+      <Monks />
     </main>
   );
 }

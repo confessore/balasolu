@@ -1,5 +1,6 @@
 import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
+import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
 import Image from "next/image";
@@ -104,6 +105,7 @@ export default function Page() {
       </div>
       <Logo />
       <NavGroup />
+      <Monks />
     </main>
   );
 }
