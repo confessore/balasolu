@@ -1,35 +1,37 @@
-import { Inter } from '@next/font/google'
-import React from 'react'
+"use client";
+import React, { useState } from "react";
 
-const inter = Inter({ subsets: ['latin'] })
-
-const info_card = 'p-5 bg-fuchsia-200 text-pink-900 rounded-xl'
-const info_card_dark = 'dark:bg-fuchsia-900 dark:text-pink-200'
-const info_card_hover = 'hover:bg-pink-200'
-const info_card_hover_dark = 'dark:hover:bg-pink-900'
-const info_card_hover_span = '[&:hover_span]:translate-x-2'
-const span = 'inline-block'
-const h2 = 'font-[600] mb-3 opacity-60 text-2xl'
-const p = 'font-serif text-md max-w-[90ch] py-2'
+const info_card = "p-5 bg-pink-200 text-pink-900 rounded-xl";
+const info_card_dark = "dark:bg-pink-900 dark:text-pink-200";
+const h2 = "flex font-[600] pb-2 opacity-60 text-2xl";
+const p = "font-serif text-md max-w-[90ch] py-2";
 
 type Props = {
-  header?: string
-  content?: string[]
-}
+  title?: string;
+  content?: string[];
+  hidden?: boolean;
+};
 
-const InfoCard = (props: Props) => {
+export default function InfoCard(props: Props) {
+  const [hidden, setHidden] = useState(props.hidden);
+
   return (
-    <>
-      <div className={`${info_card} ${info_card_dark}`}>
-        <h2 className={h2}>{props.header}</h2>
-        {props.content?.map((item, index) => (
+    <div className={`${info_card} ${info_card_dark} border border-gray-500`}>
+      <div
+        className="flex gap-x-1"
+        onClick={() => {
+          setHidden(!hidden);
+        }}
+      >
+        <h2 className={h2}>{props.title}</h2>
+        <p className="text-sm">(Click to show/hide)</p>
+      </div>
+      {!hidden &&
+        props.content?.map((item, index) => (
           <p key={index} className={p}>
             {item}
           </p>
         ))}
-      </div>
-    </>
-  )
+    </div>
+  );
 }
-
-export default InfoCard
