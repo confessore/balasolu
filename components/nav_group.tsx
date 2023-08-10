@@ -2,7 +2,7 @@ import NavLink from "./nav_link";
 
 export default function NavGroup() {
   return (
-    <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+    <div className="p-8 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
       <NavLink
         href={`/family`}
         blank={false}

@@ -12,8 +12,8 @@ export default function Page() {
   return (
     <main className={`${main} ${main_dark}`}>
       <Overlay />
-      <h1>Network</h1>
-      <p>
+      <h1 className="font-semibold text-center">Network</h1>
+      <p className="font-light text-center p-8">
         Of course we are going to link to some of the projects we are developing
         and hosting. Here, you could find exactly those.
       </p>
