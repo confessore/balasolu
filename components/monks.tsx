@@ -6,8 +6,5 @@ const monks =
 const citation = "(Rudestam & Newton, 1992, p. 3)";
 
 export default function Monks() {
-  return (
-    <Quote content={monks} author={citation} />
-  );
-};
-
+  return <Quote content={monks} author={citation} />;
+}

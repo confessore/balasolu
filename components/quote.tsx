@@ -1,9 +1,9 @@
 import React from "react";
 
 type Props = {
-    content: string;
-    author: string;
-}
+  content: string;
+  author: string;
+};
 
 export default function Quote(props: Props) {
   return (
@@ -12,4 +12,4 @@ export default function Quote(props: Props) {
       <p className="font-semibold text-md text-center">{props.author}</p>
     </div>
   );
-};
+}

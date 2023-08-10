@@ -40,7 +40,7 @@ export default function Page() {
       </div>
       <Logo />
       <NavGroup />
-      <RandomQuote />
+
       <Monks />
     </main>
   );

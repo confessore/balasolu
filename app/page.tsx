@@ -14,7 +14,7 @@ export default async function Home() {
       <Overlay />
       <Logo />
       <NavGroup />
-      <RandomQuote />
+
       <Monks />
     </main>
   );
