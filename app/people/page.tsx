@@ -9,7 +9,7 @@ const main =
   "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
 const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
-const link = "bg-gray-500 hover:bg-transparent rounded-md m-1 p-1";
+const link = "bg-gray-500 hover:bg-transparent rounded-md p-3 w-72 text-center";
 const sconfessore = [
   "What sets me apart from other people is my work ethic.",
   "For many years, working in the food industry, people on my own team would push me out of the door because my work ethic made them look bad.",
@@ -54,8 +54,8 @@ export default function Page() {
   return (
     <main className={`${main} ${main_dark}`}>
       <Overlay />
-      <h1>People</h1>
-      <p>
+      <h1 className="font-semibold text-center">People</h1>
+      <p className="font-light text-center">
         These are our people. This is where we come from. We&apos;re giving this
         life everything we got and then some.
       </p>

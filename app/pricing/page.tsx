@@ -7,7 +7,7 @@ import Overlay from "@/components/overlay";
 const main =
   "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
 const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const grid = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
+const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const development = [
   "Our website development begins at a base of $60 and includes revisions. Simply reach out to us and we shall handle the nerd stuff.",
   "Typically, website development is invoiced one time only unless your particular project requires invoicing at an hourly rate over an extended period.",
@@ -34,12 +34,12 @@ export default function Page() {
   return (
     <main className={`${main} ${main_dark}`}>
       <Overlay />
-      <h1>Pricing</h1>
-      <p>
+      <h1 className="font-semibold text-center">Pricing</h1>
+      <p className="font-light text-center">
         We wish to remain as transparent as possible about our pricing.
         Affordable flat rates and pay-as-you-go usage is what sets us apart.
       </p>
-      <div className={`${grid}`}>
+      <div className={`${flex}`}>
         <InfoCard
           title="Website Development"
           content={development}
