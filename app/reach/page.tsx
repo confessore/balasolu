@@ -35,7 +35,7 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1 className="font-semibold text-center">Reach</h1>
-      <p className="font-light text-center">
+      <p className="font-light text-center p-8">
         Can you reach the people who develop and host your website? We are
         reachable by voice and text and understand that your business is your
         bread and butter.

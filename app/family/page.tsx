@@ -26,7 +26,7 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1 className="font-semibold text-center">Family</h1>
-      <p className="font-light text-center">
+      <p className="font-light text-center p-8">
         You wouldn&apos;t try to upsell your own family so why would we? Get
         only what you need. Nothing more. Nothing less.
       </p>

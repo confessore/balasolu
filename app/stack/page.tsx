@@ -79,7 +79,7 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1 className="font-semibold text-center">Stack</h1>
-      <p className="font-light text-center">
+      <p className="font-light text-center p-8">
         This is not your mother&apos;s WordPress or Wix house. Our inclination
         is to utilize more performant tooling for better customer experiences.
       </p>

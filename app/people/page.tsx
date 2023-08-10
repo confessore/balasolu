@@ -55,7 +55,7 @@ export default function Page() {
     <main className={`${main} ${main_dark}`}>
       <Overlay />
       <h1 className="font-semibold text-center">People</h1>
-      <p className="font-light text-center">
+      <p className="font-light text-center p-8">
         These are our people. This is where we come from. We&apos;re giving this
         life everything we got and then some.
       </p>
