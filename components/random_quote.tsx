@@ -4,7 +4,7 @@ async function getData() {
   const dev = process.env.NODE_ENV !== "production";
   const server = dev ? "http://localhost:3000" : "https://balasolu.com";
   const res = await fetch(`${server}/api/random_quote`, {
-    next: { revalidate: 180 },
+    next: { revalidate: 60 },
   });
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
