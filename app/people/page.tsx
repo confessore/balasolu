@@ -3,7 +3,6 @@ import Logo from "@/components/logo";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import RandomQuote from "@/components/random_quote";
 import Image from "next/image";
 
 const main =
@@ -110,7 +109,6 @@ export default function Page() {
       </div>
       <Logo />
       <NavGroup />
-      <RandomQuote />
       <Monks />
     </main>
   );

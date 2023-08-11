@@ -6,9 +6,10 @@ import Script from "next/script";
 const akshar = Akshar({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Balanced Solutions Software",
+  title:
+    "Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications",
   description:
-    "We shall handle the nerd stuff. Based in Ocala Florida we provide development and hosting for web, mobile and desktop applications.",
+    "We shall handle the nerd stuff. Elevate your digital presence with our expert development and hosting services. From web to mobile to desktop, we deliver tailored solutions for optimal performance.",
 };
 
 export default function RootLayout({

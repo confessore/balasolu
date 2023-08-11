@@ -21,7 +21,6 @@ export default function Page() {
       <Network />
       <Logo />
       <NavGroup />
-      <RandomQuote />
       <Monks />
     </main>
   );
