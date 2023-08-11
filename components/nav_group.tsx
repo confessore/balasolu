@@ -2,7 +2,7 @@ import NavLink from "./nav_link";
 
 export default function NavGroup() {
   return (
-    <div className="p-8 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+    <div className="grid rounded-xl border border-gray-500 bg-pink-200 p-8 text-center opacity-80 dark:bg-pink-900 lg:mb-0 lg:grid-cols-4 lg:text-left">
       <NavLink
         href={`/family`}
         blank={false}
@@ -42,6 +42,12 @@ export default function NavGroup() {
         description={
           "Can you reach the people who develop and host your website? We are reachable by voice and text and understand that your business is your bread and butter."
         }
+      />
+      <NavLink
+        href={`/services`}
+        blank={false}
+        title={"Services"}
+        description={""}
       />
       <NavLink
         href={`/stack`}

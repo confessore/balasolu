@@ -1,14 +1,13 @@
+import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
+import MainWrapper from "@/components/main_wrapper";
+import MetaInfo from "@/components/meta_info";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import RandomQuote from "@/components/random_quote";
+import type { Metadata } from "next";
 
-const main =
-  "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
-const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const close = [
   "We get it. We know that reaching the other people can be like getting teeth pulled.",
   "We're here for you because this is our family business.",
@@ -30,29 +29,31 @@ const content = [
   "Word of Leo's incredible ability continued to spread, and soon, businesses of all sizes sought his guidance. He became a beacon of hope in the tech world, proving that even in a realm dominated by machines and algorithms, a touch of human connection and understanding could work wonders.",
   "And so, 'The Tech Whisperer' continued his journey, ensuring that businesses, big and small, could always reach the people who developed and hosted their websites – all through the unique and mysterious language of the digital realm.",
 ];
+const title = "Reach";
+const description =
+  "Can you reach the people who develop and host your website? We are reachable by voice and text and understand that your business is your bread and butter.";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+};
 
 export default function Page() {
   return (
-    <main className={`${main} ${main_dark}`}>
+    <MainWrapper>
       <Overlay />
-      <h1 className="font-semibold text-center">Reach</h1>
-      <p className="font-light text-center p-8">
-        Can you reach the people who develop and host your website? We are
-        reachable by voice and text and understand that your business is your
-        bread and butter.
-      </p>
-      <div className={`${flex}`}>
+      <MetaInfo title={title} description={description} />
+      <FlexColumn>
         <InfoCard
           title="So close you could touch us..."
           content={close}
           hidden={false}
         />
         <InfoCard title="The Tech Whisperer" content={content} hidden={false} />
-      </div>
+      </FlexColumn>
       <Logo />
       <NavGroup />
-      <RandomQuote />
       <Monks />
-    </main>
+    </MainWrapper>
   );
 }

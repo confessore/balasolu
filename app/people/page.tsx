@@ -1,15 +1,14 @@
+import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
+import MainWrapper from "@/components/main_wrapper";
+import MetaInfo from "@/components/meta_info";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import RandomQuote from "@/components/random_quote";
+import type { Metadata } from "next";
 import Image from "next/image";
 
-const main =
-  "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
-const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const link = "bg-gray-500 hover:bg-transparent rounded-md p-3 w-72 text-center";
 const sconfessore = [
   "What sets me apart from other people is my work ethic.",
@@ -50,18 +49,22 @@ const experience = [
   "College of Arts and Sciences Jacksonville, FL",
   "Graduated 12/2014",
 ];
+const title = "People";
+const description =
+  "These are our people. This is where we come from. We're giving this life everything we got and then some.";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+};
 
 export default function Page() {
   return (
-    <main className={`${main} ${main_dark}`}>
+    <MainWrapper>
       <Overlay />
-      <h1 className="font-semibold text-center">People</h1>
-      <p className="font-light text-center p-8">
-        These are our people. This is where we come from. We&apos;re giving this
-        life everything we got and then some.
-      </p>
-      <div className={`${flex}`}>
-        <div className="flex flex-wrap justify-center items-center gap-1">
+      <MetaInfo title={title} description={description} />
+      <FlexColumn>
+        <div className="flex flex-wrap items-center justify-center gap-3">
           <Image
             src="/us.png"
             alt="us"
@@ -84,7 +87,7 @@ export default function Page() {
           content={sconfessore}
           hidden={false}
         />
-        <div className="flex flex-wrap justify-center items-center gap-3">
+        <div className="flex flex-wrap items-center justify-center gap-3">
           <a
             href="https://linkedin.com/in/confessore"
             target="_blank"
@@ -107,11 +110,10 @@ export default function Page() {
           content={experience}
           hidden={true}
         />
-      </div>
+      </FlexColumn>
       <Logo />
       <NavGroup />
-      <RandomQuote />
       <Monks />
-    </main>
+    </MainWrapper>
   );
 }

@@ -1,14 +1,13 @@
+import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
+import MainWrapper from "@/components/main_wrapper";
+import MetaInfo from "@/components/meta_info";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import RandomQuote from "@/components/random_quote";
+import type { Metadata } from "next";
 
-const main =
-  "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
-const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const development = [
   "Our website development begins at a base of $60 and includes revisions. Simply reach out to us and we shall handle the nerd stuff.",
   "Typically, website development is invoiced one time only unless your particular project requires invoicing at an hourly rate over an extended period.",
@@ -30,28 +29,31 @@ const hosting = [
   "• $6 per additional 10GB-hours of serverless function execution past the included 10GB-hours of serverless function execution.",
   "So a month of hosting with 3000 optimized source images, 200GB bandwidth and 90GB-hours of serverless function execution would total out at $251.",
 ];
+const title = "Pricing";
+const description =
+  "We wish to remain as transparent as possible about our pricing. Affordable flat rates and pay-as-you-go usage is what sets us apart.";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+};
 
 export default function Page() {
   return (
-    <main className={`${main} ${main_dark}`}>
+    <MainWrapper>
       <Overlay />
-      <h1 className="font-semibold text-center">Pricing</h1>
-      <p className="font-light text-center p-8">
-        We wish to remain as transparent as possible about our pricing.
-        Affordable flat rates and pay-as-you-go usage is what sets us apart.
-      </p>
-      <div className={`${flex}`}>
+      <MetaInfo title={title} description={description} />
+      <FlexColumn>
         <InfoCard
           title="Website Development"
           content={development}
           hidden={false}
         />
         <InfoCard title="Website Hosting" content={hosting} hidden={false} />
-      </div>
+      </FlexColumn>
       <Logo />
       <NavGroup />
-      <RandomQuote />
       <Monks />
-    </main>
+    </MainWrapper>
   );
 }
