@@ -1,13 +1,13 @@
+import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
+import MainWrapper from "@/components/main_wrapper";
+import MetaInfo from "@/components/meta_info";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
+import type { Metadata } from "next";
 
-const main =
-  "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
-const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const webAppDevelopment = [
   "From dynamic websites to robust web apps, we craft digital experiences that engage users. Our developers bring your ideas to life with responsive and feature-rich web solutions.",
 ];
@@ -26,14 +26,20 @@ const hostingDeployment = [
 const cloudIntegration = [
   "Leverage the flexibility of the cloud. We integrate cloud technologies to enhance scalability, data management, and collaboration for your applications.",
 ];
+const title = "Services";
+const description = "";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+};
 
 export default function Page() {
   return (
-    <main className={`${main} ${main_dark}`}>
+    <MainWrapper>
       <Overlay />
-      <h1 className="font-semibold text-center">Services</h1>
-      <p className="font-light text-center p-8"></p>
-      <div className={`${flex}`}>
+      <MetaInfo title={title} description={description} />
+      <FlexColumn>
         <InfoCard
           title="Web Application Development"
           content={webAppDevelopment}
@@ -64,10 +70,10 @@ export default function Page() {
           content={cloudIntegration}
           hidden={false}
         />
-      </div>
+      </FlexColumn>
       <Logo />
       <NavGroup />
       <Monks />
-    </main>
+    </MainWrapper>
   );
 }

@@ -1,13 +1,13 @@
+import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
+import MainWrapper from "@/components/main_wrapper";
+import MetaInfo from "@/components/meta_info";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
+import type { Metadata } from "next";
 
-const main =
-  "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
-const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const content = [
   "Once upon a time in the quaint town of Harmonyville, there lived a young man named Ethan. He had a unique profession that set him apart from the rest of the townsfolk – he was an ethical salesman. Unlike the typical salespeople who were known for their aggressive upselling tactics, Ethan believed in treating everyone, especially his family, with respect and fairness.",
   "Ethan came from a close-knit family consisting of his parents, his younger sister Lily, and his grandmother, Grandma Agnes. The town had its share of pushy salespeople who often took advantage of unsuspecting customers, but Ethan was determined to prove that sales could be done differently.",
@@ -20,26 +20,30 @@ const content = [
   "The sunset cast a warm, golden glow over the lake as the family sat there, content with their decision. Ethan's ethical approach had not only strengthened their bond but had also reaffirmed their trust in him. From that day forward, Ethan continued to be the ethical salesman who never tried to upsell his own family or anyone else in Harmonyville.",
   "As time went on, word spread about Ethan's unique approach to sales. His reputation grew, and people began to seek him out for advice, knowing that he would always prioritize their needs over profits. Through his unwavering dedication to ethical salesmanship, Ethan not only made a difference in his family's life but also transformed the way business was conducted in Harmonyville.",
 ];
+const title = "Family";
+const description =
+  "You wouldn't try to upsell your own family so why would we? Get only what you need. Nothing more. Nothing less.";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+};
 
 export default function Page() {
   return (
-    <main className={`${main} ${main_dark}`}>
+    <MainWrapper>
       <Overlay />
-      <h1 className="font-semibold text-center">Family</h1>
-      <p className="font-light text-center p-8">
-        You wouldn&apos;t try to upsell your own family so why would we? Get
-        only what you need. Nothing more. Nothing less.
-      </p>
-      <div className={`${flex}`}>
+      <MetaInfo title={title} description={description} />
+      <FlexColumn>
         <InfoCard
           title="The Ethical Salesman"
           content={content}
           hidden={false}
         />
-      </div>
+      </FlexColumn>
       <Logo />
       <NavGroup />
       <Monks />
-    </main>
+    </MainWrapper>
   );
 }

@@ -1,14 +1,9 @@
-import Conclusion from "@/components/conclusion";
-import InfoCard from "@/components/info_card";
-import Introduction from "@/components/introduction";
+import Info from "@/components/info";
 import Logo from "@/components/logo";
+import MainWrapper from "@/components/main_wrapper";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-
-const main =
-  "flex flex-col justify-between items-center py-24 gap-3 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
-const main_dark = "dark:bg-pink-900 dark:text-pink-200";
 
 const choice = [
   "• Technical Excellence: Our skilled developers stay updated with the latest technologies to create cutting-edge applications.",
@@ -18,16 +13,20 @@ const choice = [
   //"• Proven Track Record: Our portfolio boasts successful projects across various industries, showcasing our expertise and versatility.",
 ];
 
+const introduction =
+  "Welcome to Balanced Solutions Software, your all-in-one destination for comprehensive development and hosting solutions. With a passion for innovation and technical excellence, we specialize in creating and hosting applications that cater to the needs of modern businesses.";
+const conclusion =
+  "At Balanced Solutions Software, we are your partners in innovation. From development to hosting, we provide end-to-end solutions that empower your digital presence. Let's embark on a journey to create applications that drive success. Contact us today to explore how we can transform your digital aspirations into reality.";
+
 export default async function Home() {
   return (
-    <main className={`${main} ${main_dark}`}>
+    <MainWrapper>
       <Overlay />
-      <Introduction />
+      <Info description={introduction} />
       <Logo />
       <NavGroup />
-      <InfoCard title="Why Choose Us:" content={choice} />
-      <Conclusion />
+      <Info description={conclusion} />
       <Monks />
-    </main>
+    </MainWrapper>
   );
 }

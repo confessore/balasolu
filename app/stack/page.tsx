@@ -1,15 +1,14 @@
+import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
 import Logo from "@/components/logo";
+import MainWrapper from "@/components/main_wrapper";
+import MetaInfo from "@/components/meta_info";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import RandomQuote from "@/components/random_quote";
+import type { Metadata } from "next";
 import Image from "next/image";
 
-const main =
-  "flex flex-col justify-between items-center py-24 min-w-full min-h-screen bg-pink-200 text-pink-900 opacity-90";
-const main_dark = "dark:bg-pink-900 dark:text-pink-200";
-const flex = "flex flex-col max-w-full justify-center items-center gap-1 py-5";
 const javascript = [
   "JavaScript is a high-level, dynamically typed scripting language that was originally designed for adding interactivity to web pages. It allows you to manipulate web page content, handle user interactions, and dynamically update the page without requiring a full page reload. JavaScript is primarily used in web development for both front-end and back-end tasks.",
   "Client-Side Scripting: JavaScript is mainly used on the client side, meaning it runs in a user's web browser. It enables dynamic content, form validation, animations, and more.",
@@ -74,17 +73,21 @@ const docker = [
   "Swarm and Kubernetes: Docker Swarm and Kubernetes are orchestration tools that help manage the deployment, scaling, and operation of containers in a clustered environment. They provide features for load balancing, service discovery, automated scaling, and more.",
   "Portability and Consistency: Docker promotes consistency between development, testing, and production environments. Developers can work with the same container locally as what's running in production, reducing the 'it works on my machine' problem.",
 ];
+const title = "Stack";
+const description =
+  "This is not your mother's WordPress or Wix house. Our inclination is to utilize more performant tooling for better customer experiences.";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+};
 
 export default function Page() {
   return (
-    <main className={`${main} ${main_dark}`}>
+    <MainWrapper>
       <Overlay />
-      <h1 className="font-semibold text-center">Stack</h1>
-      <p className="font-light text-center p-8">
-        This is not your mother&apos;s WordPress or Wix house. Our inclination
-        is to utilize more performant tooling for better customer experiences.
-      </p>
-      <div className={`${flex}`}>
+      <MetaInfo title={title} description={description} />
+      <FlexColumn>
         <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
         <InfoCard title="JavaScript" content={javascript} hidden={true} />
         <Image src="/ts.svg" alt="typescript" height={96} width={96} priority />
@@ -103,11 +106,10 @@ export default function Page() {
           priority
         />
         <InfoCard title="Docker" content={docker} hidden={true} />
-      </div>
+      </FlexColumn>
       <Logo />
       <NavGroup />
-      <RandomQuote />
       <Monks />
-    </main>
+    </MainWrapper>
   );
 }
