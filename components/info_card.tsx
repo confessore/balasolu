@@ -23,11 +23,8 @@ export default function InfoCard(props: Props) {
       </div>
       {!hidden &&
         props.content?.map((item, index) => (
-          <div className="flex w-full items-center justify-center">
-            <p
-              key={index}
-              className="text-md w-full max-w-[90ch] py-2 font-serif"
-            >
+          <div key={index} className="flex w-full items-center justify-center">
+            <p className="text-md w-full max-w-[90ch] py-2 font-serif">
               {item}
             </p>
           </div>
