@@ -44,6 +44,14 @@ export default function NavGroup() {
         }
       />
       <NavLink
+        href={`/services`}
+        blank={false}
+        title={"Services"}
+        description={
+          ""
+        }
+      />
+      <NavLink
         href={`/stack`}
         blank={false}
         title={"Stack"}
