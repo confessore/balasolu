@@ -34,7 +34,7 @@ const description =
   "We wish to remain as transparent as possible about our pricing. Affordable flat rates and pay-as-you-go usage is what sets us apart.";
 
 export const metadata: Metadata = {
-  title: title,
+  title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
   description: description,
 };
 

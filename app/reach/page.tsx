@@ -34,7 +34,7 @@ const description =
   "Can you reach the people who develop and host your website? We are reachable by voice and text and understand that your business is your bread and butter.";
 
 export const metadata: Metadata = {
-  title: title,
+  title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
   description: description,
 };
 

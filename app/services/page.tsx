@@ -31,7 +31,7 @@ const description =
   "Our hearts are for service and we aim to raise the bar by setting the standard of customer service excellence in the development & hosting industry.";
 
 export const metadata: Metadata = {
-  title: title,
+  title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
   description: description,
 };
 
