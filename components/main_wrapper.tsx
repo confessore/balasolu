@@ -12,7 +12,7 @@ export default function MainWrapper({
           src={"/jwt.webp"}
           alt={"jwt"}
           fill
-          style={{objectFit: "cover"}}
+          style={{ objectFit: "cover" }}
           priority
         />
       </div>
