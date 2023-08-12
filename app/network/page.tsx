@@ -12,7 +12,7 @@ const description =
   "Of course we are going to link to some of the projects we are developing and hosting. Here, you could find exactly those.";
 
 export const metadata: Metadata = {
-  title: title,
+  title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
   description: description,
 };
 

@@ -19,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <body className={akshar.className}>{children}</body>
       <>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
@@ -33,7 +34,6 @@ export default function RootLayout({
         `}
         </Script>
       </>
-      <body className={akshar.className}>{children}</body>
     </html>
   );
 }

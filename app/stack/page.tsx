@@ -78,7 +78,7 @@ const description =
   "This is not your mother's WordPress or Wix house. Our inclination is to utilize more performant tooling for better customer experiences.";
 
 export const metadata: Metadata = {
-  title: title,
+  title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
   description: description,
 };
 

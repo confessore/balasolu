@@ -25,7 +25,7 @@ const description =
   "You wouldn't try to upsell your own family so why would we? Get only what you need. Nothing more. Nothing less.";
 
 export const metadata: Metadata = {
-  title: title,
+  title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
   description: description,
 };
 

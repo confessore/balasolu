@@ -54,7 +54,7 @@ const description =
   "These are our people. This is where we come from. We're giving this life everything we got and then some.";
 
 export const metadata: Metadata = {
-  title: title,
+  title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
   description: description,
 };
 

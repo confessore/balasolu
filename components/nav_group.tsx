@@ -2,7 +2,7 @@ import NavLink from "./nav_link";
 
 export default function NavGroup() {
   return (
-    <div className="grid rounded-xl border border-gray-500 bg-pink-200 p-8 text-center opacity-80 dark:bg-pink-900 lg:mb-0 lg:grid-cols-4 lg:text-left">
+    <div className="grid w-full items-center justify-center rounded-xl border border-gray-500 bg-pink-200 p-8 text-center opacity-80 dark:bg-pink-900 lg:mb-0 lg:grid-cols-4 lg:text-left">
       <NavLink
         href={`/family`}
         blank={false}
@@ -47,7 +47,9 @@ export default function NavGroup() {
         href={`/services`}
         blank={false}
         title={"Services"}
-        description={""}
+        description={
+          "Our hearts are for service and we aim to raise the bar by setting the standard of customer service excellence in the development & hosting industry."
+        }
       />
       <NavLink
         href={`/stack`}
