@@ -14,6 +14,7 @@ export default function MainWrapper({
           objectFit="cover"
           priority
           alt={"jwt"}
+          quality={50}
         />
       </div>
       {children}
