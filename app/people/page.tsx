@@ -1,5 +1,7 @@
 import FlexColumn from "@/components/flex_column";
+import FlexWrap from "@/components/flex_wrap";
 import InfoCard from "@/components/info_card";
+import LinkButton from "@/components/link_button";
 import Logo from "@/components/logo";
 import MainWrapper from "@/components/main_wrapper";
 import MetaInfo from "@/components/meta_info";
@@ -9,7 +11,6 @@ import Overlay from "@/components/overlay";
 import type { Metadata } from "next";
 import Image from "next/image";
 
-const link = "bg-gray-500 hover:bg-transparent rounded-md p-3 w-72 text-center";
 const sconfessore = [
   "What sets me apart from other people is my work ethic.",
   "For many years, working in the food industry, people on my own team would push me out of the door because my work ethic made them look bad.",
@@ -17,38 +18,6 @@ const sconfessore = [
   "I am a rock-solid senior software engineer, with a versatile skill set, who is dedicated and excels at resolving challenges with process improvements and innovative solutions which reliably increase efficiency, customer satisfaction and company standards.",
 ];
 
-const experience = [
-  "Senior Software Engineer",
-  "2022 to Present",
-  "Digital Brands Board Remote, OK",
-  "Built and deployed Docker images on AWS via CI/CD pipelines which utilized Git, JavaScript/TypeScript and C#(.NET).",
-  "Collaborated with cross-functional teams in an Agile environment, utilizing Scrum and Kanban methodologies to deliver projects on time.",
-  "",
-  "Senior Software Engineer",
-  "2021 to Present",
-  "Balanced Solutions Software Ocala, FL",
-  "Developed and maintained full-stack web applications using JavaScript/TypeScript, C#(.NET), Rust and React.",
-  "Designed and implemented RESTful APIs ensuring efficient data transfer and high scalability.",
-  "",
-  ".NET Software Engineer",
-  "2020 to 2020",
-  "CHAMPS Software Crystal River, FL",
-  "Utilized Xamarin for mobile development and Zebra Crossing for barcoding.",
-  "Constructed v2 API endpoints with ASP.NET which communicated with Microsoft SQL Server.",
-  "",
-  "General Service Marine",
-  "United States Marine Corps",
-  "2014 to 2015",
-  "DD-214 available upon request.",
-  "General discharge under honorable conditions.",
-  "",
-  "JavaScript/TypeScript, C#, Rust, HTML, CSS, React, Tailwind, Node.js, ASP.NET, Xamarin, SQL, MongoDB, Docker, AWS, CI/CD, Git",
-  "",
-  "University of North Florida",
-  "Bachelor's",
-  "College of Arts and Sciences Jacksonville, FL",
-  "Graduated 12/2014",
-];
 const title = "People";
 const description =
   "These are our people. This is where we come from. We're giving this life everything we got and then some.";
@@ -64,7 +33,7 @@ export default function Page() {
       <Overlay />
       <MetaInfo title={title} description={description} />
       <FlexColumn>
-        <div className="flex flex-wrap items-center justify-center gap-3">
+        <FlexWrap>
           <Image
             src="/us.png"
             alt="us"
@@ -81,35 +50,26 @@ export default function Page() {
             priority
             className="rounded-xl"
           />
-        </div>
+        </FlexWrap>
         <InfoCard
           title="Steven Confessore"
           content={sconfessore}
           hidden={false}
         />
-        <div className="flex flex-wrap items-center justify-center gap-3">
-          <a
+        <FlexWrap>
+          <LinkButton
+            href="/confessore_resume.pdf"
+            text="Click here to check out my résumé!"
+          />
+          <LinkButton
             href="https://linkedin.com/in/confessore"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={link}
-          >
-            Click here to check out my LinkedIn profile!
-          </a>
-          <a
+            text="Click here to check out my LinkedIn profile!"
+          />
+          <LinkButton
             href="https://github.com/confessore"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={link}
-          >
-            Click here to check out my GitHub profile!
-          </a>
-        </div>
-        <InfoCard
-          title="Work Experience and Education"
-          content={experience}
-          hidden={true}
-        />
+            text="Click here to check out my GitHub profile!"
+          />
+        </FlexWrap>
       </FlexColumn>
       <Logo />
       <NavGroup />
