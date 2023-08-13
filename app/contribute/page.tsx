@@ -8,9 +8,9 @@ import Overlay from "@/components/overlay";
 import TipButton from "@/components/tip_button";
 import type { Metadata } from "next";
 
-const title = "Tip";
+const title = "Contribute";
 const description =
-  "Care to share a drink? A meal? THE WHOLE RENT!? 😅 Any gratuity is a blessing and always appreciated.";
+  "Care to share a drink? A meal? THE WHOLE RENT!? 😅 Any contribution is a blessing and always appreciated.";
 
 export const metadata: Metadata = {
   title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
