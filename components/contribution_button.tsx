@@ -4,7 +4,7 @@ import getStripe from "@/lib/get_stripe";
 
 const dev = process.env.NODE_ENV !== "production";
 
-export default function TipButton() {
+export default function ContributionButton() {
   const handleCheckout = async () => {
     try {
       const { sessionId } = await checkoutPrice({
@@ -31,7 +31,7 @@ export default function TipButton() {
       onClick={() => handleCheckout()}
       className="w-72 rounded-md bg-gray-500 p-3 text-center hover:bg-transparent"
     >
-      Click here to send a tip!
+      Click here to make a contribution!
     </button>
   );
 }

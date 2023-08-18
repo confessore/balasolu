@@ -62,10 +62,6 @@ export default function Page() {
             text="Click here to check out my résumé!"
           />
           <LinkButton
-            href="https://linkedin.com/in/confessore"
-            text="Click here to check out my LinkedIn profile!"
-          />
-          <LinkButton
             href="https://github.com/confessore"
             text="Click here to check out my GitHub profile!"
           />

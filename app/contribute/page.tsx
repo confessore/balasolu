@@ -5,12 +5,12 @@ import MetaInfo from "@/components/meta_info";
 import Monks from "@/components/monks";
 import NavGroup from "@/components/nav_group";
 import Overlay from "@/components/overlay";
-import TipButton from "@/components/tip_button";
+import ContributionButton from "@/components/contribution_button";
 import type { Metadata } from "next";
 
-const title = "Tip";
+const title = "Contribute";
 const description =
-  "Care to share a drink? A meal? THE WHOLE RENT!? 😅 Any gratuity is a blessing and always appreciated.";
+  "Care to share a drink? A meal? THE WHOLE RENT!? 😅 Any contribution is a blessing and always appreciated.";
 
 export const metadata: Metadata = {
   title: `${title} - Balanced Solutions Software - Seamless Development and Hosting Solutions for Web, Mobile, and Desktop Applications`,
@@ -23,7 +23,7 @@ export default function Page() {
       <Overlay />
       <MetaInfo title={title} description={description} />
       <FlexColumn>
-        <TipButton />
+        <ContributionButton />
       </FlexColumn>
       <Logo />
       <NavGroup />
