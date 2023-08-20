@@ -4,6 +4,14 @@ export default function NavGroup() {
   return (
     <div className="grid w-full items-center justify-center rounded-xl border border-gray-500 bg-pink-200 p-8 text-center opacity-80 dark:bg-pink-900 lg:mb-0 lg:grid-cols-4 lg:text-left">
       <NavLink
+        href={`https://blog.balasolu.com`}
+        blank={false}
+        title={"Blog"}
+        description={
+          "We're writing content! Read about what is up and learn how to stay safer in this new AI enabled era."
+        }
+      />
+      <NavLink
         href={`/family`}
         blank={false}
         title={"Family"}
