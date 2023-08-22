@@ -1,9 +1,4 @@
 import Info from "@/components/info";
-import Logo from "@/components/logo";
-import MainWrapper from "@/components/main_wrapper";
-import Monks from "@/components/monks";
-import NavGroup from "@/components/nav_group";
-import Overlay from "@/components/overlay";
 
 const choice = [
   "• Technical Excellence: Our skilled developers stay updated with the latest technologies to create cutting-edge applications.",
@@ -20,13 +15,9 @@ const conclusion =
 
 export default async function Home() {
   return (
-    <MainWrapper>
-      <Overlay />
+    <>
       <Info description={introduction} />
-      <Logo />
-      <NavGroup />
       <Info description={conclusion} />
-      <Monks />
-    </MainWrapper>
+    </>
   );
 }

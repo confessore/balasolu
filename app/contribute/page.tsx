@@ -1,10 +1,5 @@
 import FlexColumn from "@/components/flex_column";
-import Logo from "@/components/logo";
-import MainWrapper from "@/components/main_wrapper";
 import MetaInfo from "@/components/meta_info";
-import Monks from "@/components/monks";
-import NavGroup from "@/components/nav_group";
-import Overlay from "@/components/overlay";
 import ContributionButton from "@/components/contribution_button";
 import type { Metadata } from "next";
 
@@ -19,15 +14,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <MainWrapper>
-      <Overlay />
-      <MetaInfo title={title} description={description} />
       <FlexColumn>
+      <MetaInfo title={title} description={description} />
         <ContributionButton />
       </FlexColumn>
-      <Logo />
-      <NavGroup />
-      <Monks />
-    </MainWrapper>
   );
 }

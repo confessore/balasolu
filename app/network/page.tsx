@@ -1,10 +1,6 @@
-import Logo from "@/components/logo";
-import MainWrapper from "@/components/main_wrapper";
+import FlexColumn from "@/components/flex_column";
 import MetaInfo from "@/components/meta_info";
-import Monks from "@/components/monks";
-import NavGroup from "@/components/nav_group";
 import Network from "@/components/network";
-import Overlay from "@/components/overlay";
 import type { Metadata } from "next";
 
 const title = "Network";
@@ -18,13 +14,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <MainWrapper>
-      <Overlay />
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
       <Network />
-      <Logo />
-      <NavGroup />
-      <Monks />
-    </MainWrapper>
+      </FlexColumn>
   );
 }
