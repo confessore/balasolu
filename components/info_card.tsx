@@ -11,7 +11,7 @@ export default function InfoCard(props: Props) {
   const [hidden, setHidden] = useState(props.hidden);
 
   return (
-    <div className="w-full border border-gray-500 bg-pink-200 p-8 opacity-90 dark:bg-pink-800">
+    <div className="w-full border border-gray-500 bg-pink-200 p-3 opacity-90 dark:bg-pink-800">
       <div
         className="flex justify-center gap-x-3"
         onClick={() => {

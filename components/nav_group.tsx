@@ -2,7 +2,7 @@ import NavLink from "./nav_link";
 
 export default function NavGroup() {
   return (
-    <div className="flex w-full flex-wrap items-center justify-center border border-gray-500 bg-pink-200 p-8 text-center opacity-90 dark:bg-pink-800 lg:mb-0 lg:grid-cols-4 lg:text-left">
+    <div className="flex w-full flex-wrap items-center justify-center border border-gray-500 bg-pink-200 p-3 text-center opacity-90 dark:bg-pink-800 lg:mb-0 lg:grid-cols-4 lg:text-left">
       <NavLink
         href={`https://blog.balasolu.com`}
         blank={false}
