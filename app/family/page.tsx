@@ -26,13 +26,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-      <FlexColumn>
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
-        <InfoCard
-          title="The Ethical Salesman"
-          content={content}
-          hidden={false}
-        />
-      </FlexColumn>
+      <InfoCard title="The Ethical Salesman" content={content} hidden={false} />
+    </FlexColumn>
   );
 }

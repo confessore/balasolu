@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-      <FlexColumn>
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
-        <ContributionButton />
-      </FlexColumn>
+      <ContributionButton />
+    </FlexColumn>
   );
 }

@@ -24,41 +24,41 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-      <FlexColumn>
-        <MetaInfo title={title} description={description} />
-        <FlexWrap>
-          <Image
-            src="/us.png"
-            alt="us"
-            height={256}
-            width={256}
-            priority
-            className="rounded-xl"
-          />
-          <Image
-            src="/us2.png"
-            alt="us2"
-            height={256}
-            width={256}
-            priority
-            className="rounded-xl"
-          />
-        </FlexWrap>
-        <InfoCard
-          title="Steven Confessore"
-          content={sconfessore}
-          hidden={false}
+    <FlexColumn>
+      <MetaInfo title={title} description={description} />
+      <FlexWrap>
+        <Image
+          src="/us.png"
+          alt="us"
+          height={256}
+          width={256}
+          priority
+          className="rounded-xl"
         />
-        <FlexWrap>
-          <LinkButton
-            href="/confessore_resume.pdf"
-            text="Click here to check out my résumé!"
-          />
-          <LinkButton
-            href="https://github.com/confessore"
-            text="Click here to check out my GitHub profile!"
-          />
-        </FlexWrap>
-      </FlexColumn>
+        <Image
+          src="/us2.png"
+          alt="us2"
+          height={256}
+          width={256}
+          priority
+          className="rounded-xl"
+        />
+      </FlexWrap>
+      <InfoCard
+        title="Steven Confessore"
+        content={sconfessore}
+        hidden={false}
+      />
+      <FlexWrap>
+        <LinkButton
+          href="/confessore_resume.pdf"
+          text="Click here to check out my résumé!"
+        />
+        <LinkButton
+          href="https://github.com/confessore"
+          text="Click here to check out my GitHub profile!"
+        />
+      </FlexWrap>
+    </FlexColumn>
   );
 }

@@ -32,38 +32,38 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-      <FlexColumn>
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
-        <InfoCard
-          title="Web Application Development"
-          content={webAppDevelopment}
-          hidden={false}
-        />
-        <InfoCard
-          title="Mobile Application Development"
-          content={mobileAppDevelopment}
-          hidden={false}
-        />
-        <InfoCard
-          title="Desktop Application Solutions"
-          content={desktopAppSolutions}
-          hidden={false}
-        />
-        <InfoCard
-          title="Full-Stack Expertise"
-          content={fullStackExpertise}
-          hidden={false}
-        />
-        <InfoCard
-          title="Hosting and Deployment"
-          content={hostingDeployment}
-          hidden={false}
-        />
-        <InfoCard
-          title="Cloud Integration"
-          content={cloudIntegration}
-          hidden={false}
-        />
-      </FlexColumn>
+      <InfoCard
+        title="Web Application Development"
+        content={webAppDevelopment}
+        hidden={false}
+      />
+      <InfoCard
+        title="Mobile Application Development"
+        content={mobileAppDevelopment}
+        hidden={false}
+      />
+      <InfoCard
+        title="Desktop Application Solutions"
+        content={desktopAppSolutions}
+        hidden={false}
+      />
+      <InfoCard
+        title="Full-Stack Expertise"
+        content={fullStackExpertise}
+        hidden={false}
+      />
+      <InfoCard
+        title="Hosting and Deployment"
+        content={hostingDeployment}
+        hidden={false}
+      />
+      <InfoCard
+        title="Cloud Integration"
+        content={cloudIntegration}
+        hidden={false}
+      />
+    </FlexColumn>
   );
 }

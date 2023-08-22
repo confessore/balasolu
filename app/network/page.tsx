@@ -17,6 +17,6 @@ export default function Page() {
     <FlexColumn>
       <MetaInfo title={title} description={description} />
       <Network />
-      </FlexColumn>
+    </FlexColumn>
   );
 }

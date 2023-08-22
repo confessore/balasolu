@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-      <FlexColumn>
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
-        <InfoCard
-          title="Website Development"
-          content={development}
-          hidden={false}
-        />
-        <InfoCard title="Website Hosting" content={hosting} hidden={false} />
-      </FlexColumn>
+      <InfoCard
+        title="Website Development"
+        content={development}
+        hidden={false}
+      />
+      <InfoCard title="Website Hosting" content={hosting} hidden={false} />
+    </FlexColumn>
   );
 }

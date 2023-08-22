@@ -33,9 +33,9 @@ export default function RootLayout({
           <Backdrop>
             {children}
             <FlexColumn>
-            <Logo />
-            <NavGroup />
-            <Monks />
+              <Logo />
+              <NavGroup />
+              <Monks />
             </FlexColumn>
           </Backdrop>
         </MainWrapper>
