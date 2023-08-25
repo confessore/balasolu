@@ -1,11 +1,6 @@
 import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
-import Logo from "@/components/logo";
-import MainWrapper from "@/components/main_wrapper";
 import MetaInfo from "@/components/meta_info";
-import Monks from "@/components/monks";
-import NavGroup from "@/components/nav_group";
-import Overlay from "@/components/overlay";
 import type { Metadata } from "next";
 
 const webAppDevelopment = [
@@ -37,44 +32,38 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <MainWrapper>
-      <Overlay />
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
-      <FlexColumn>
-        <InfoCard
-          title="Web Application Development"
-          content={webAppDevelopment}
-          hidden={false}
-        />
-        <InfoCard
-          title="Mobile Application Development"
-          content={mobileAppDevelopment}
-          hidden={false}
-        />
-        <InfoCard
-          title="Desktop Application Solutions"
-          content={desktopAppSolutions}
-          hidden={false}
-        />
-        <InfoCard
-          title="Full-Stack Expertise"
-          content={fullStackExpertise}
-          hidden={false}
-        />
-        <InfoCard
-          title="Hosting and Deployment"
-          content={hostingDeployment}
-          hidden={false}
-        />
-        <InfoCard
-          title="Cloud Integration"
-          content={cloudIntegration}
-          hidden={false}
-        />
-      </FlexColumn>
-      <Logo />
-      <NavGroup />
-      <Monks />
-    </MainWrapper>
+      <InfoCard
+        title="Web Application Development"
+        content={webAppDevelopment}
+        hidden={false}
+      />
+      <InfoCard
+        title="Mobile Application Development"
+        content={mobileAppDevelopment}
+        hidden={false}
+      />
+      <InfoCard
+        title="Desktop Application Solutions"
+        content={desktopAppSolutions}
+        hidden={false}
+      />
+      <InfoCard
+        title="Full-Stack Expertise"
+        content={fullStackExpertise}
+        hidden={false}
+      />
+      <InfoCard
+        title="Hosting and Deployment"
+        content={hostingDeployment}
+        hidden={false}
+      />
+      <InfoCard
+        title="Cloud Integration"
+        content={cloudIntegration}
+        hidden={false}
+      />
+    </FlexColumn>
   );
 }

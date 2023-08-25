@@ -2,12 +2,7 @@ import FlexColumn from "@/components/flex_column";
 import FlexWrap from "@/components/flex_wrap";
 import InfoCard from "@/components/info_card";
 import LinkButton from "@/components/link_button";
-import Logo from "@/components/logo";
-import MainWrapper from "@/components/main_wrapper";
 import MetaInfo from "@/components/meta_info";
-import Monks from "@/components/monks";
-import NavGroup from "@/components/nav_group";
-import Overlay from "@/components/overlay";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -29,47 +24,41 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <MainWrapper>
-      <Overlay />
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
-      <FlexColumn>
-        <FlexWrap>
-          <Image
-            src="/us.png"
-            alt="us"
-            height={256}
-            width={256}
-            priority
-            className="rounded-xl"
-          />
-          <Image
-            src="/us2.png"
-            alt="us2"
-            height={256}
-            width={256}
-            priority
-            className="rounded-xl"
-          />
-        </FlexWrap>
-        <InfoCard
-          title="Steven Confessore"
-          content={sconfessore}
-          hidden={false}
+      <FlexWrap>
+        <Image
+          src="/us.png"
+          alt="us"
+          height={256}
+          width={256}
+          priority
+          className="rounded-xl"
         />
-        <FlexWrap>
-          <LinkButton
-            href="/confessore_resume.pdf"
-            text="Click here to check out my résumé!"
-          />
-          <LinkButton
-            href="https://github.com/confessore"
-            text="Click here to check out my GitHub profile!"
-          />
-        </FlexWrap>
-      </FlexColumn>
-      <Logo />
-      <NavGroup />
-      <Monks />
-    </MainWrapper>
+        <Image
+          src="/us2.png"
+          alt="us2"
+          height={256}
+          width={256}
+          priority
+          className="rounded-xl"
+        />
+      </FlexWrap>
+      <InfoCard
+        title="Steven Confessore"
+        content={sconfessore}
+        hidden={false}
+      />
+      <FlexWrap>
+        <LinkButton
+          href="/confessore_resume.pdf"
+          text="Click here to check out my résumé!"
+        />
+        <LinkButton
+          href="https://github.com/confessore"
+          text="Click here to check out my GitHub profile!"
+        />
+      </FlexWrap>
+    </FlexColumn>
   );
 }

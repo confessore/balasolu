@@ -1,12 +1,15 @@
 "use client";
 import { checkoutPrice } from "@/lib/helpers";
 import getStripe from "@/lib/get_stripe";
+import { useState } from "react";
 
 const dev = process.env.NODE_ENV !== "production";
 
 export default function ContributionButton() {
+  const [disabled, setDisabled] = useState(false);
   const handleCheckout = async () => {
     try {
+      setDisabled(true);
       const { sessionId } = await checkoutPrice({
         url: "/api/checkout/price",
         data: {
@@ -21,13 +24,14 @@ export default function ContributionButton() {
     } catch (error) {
       return alert((error as Error)?.message);
     } finally {
+      setDisabled(false);
     }
   };
 
   return (
     <button
       type="button"
-      disabled={false}
+      disabled={disabled}
       onClick={() => handleCheckout()}
       className="w-72 rounded-md bg-gray-500 p-3 text-center hover:bg-transparent"
     >

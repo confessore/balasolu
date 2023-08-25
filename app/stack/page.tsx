@@ -1,11 +1,6 @@
 import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
-import Logo from "@/components/logo";
-import MainWrapper from "@/components/main_wrapper";
 import MetaInfo from "@/components/meta_info";
-import Monks from "@/components/monks";
-import NavGroup from "@/components/nav_group";
-import Overlay from "@/components/overlay";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -84,32 +79,20 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <MainWrapper>
-      <Overlay />
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
-      <FlexColumn>
-        <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
-        <InfoCard title="JavaScript" content={javascript} hidden={true} />
-        <Image src="/ts.svg" alt="typescript" height={96} width={96} priority />
-        <InfoCard title="TypeScript" content={typescript} hidden={true} />
-        <Image src="/react.svg" alt="react" height={96} width={96} priority />
-        <InfoCard title="React" content={react} hidden={true} />
-        <Image src="/csharp.svg" alt="c#" height={96} width={96} priority />
-        <InfoCard title="C#" content={csharp} hidden={true} />
-        <Image src="/rust.svg" alt="rust" height={96} width={96} priority />
-        <InfoCard title="Rust" content={rust} hidden={true} />
-        <Image
-          src="/docker.svg"
-          alt="docker"
-          height={96}
-          width={256}
-          priority
-        />
-        <InfoCard title="Docker" content={docker} hidden={true} />
-      </FlexColumn>
-      <Logo />
-      <NavGroup />
-      <Monks />
-    </MainWrapper>
+      <Image src="/js.svg" alt="javascript" height={96} width={96} priority />
+      <InfoCard title="JavaScript" content={javascript} hidden={true} />
+      <Image src="/ts.svg" alt="typescript" height={96} width={96} priority />
+      <InfoCard title="TypeScript" content={typescript} hidden={true} />
+      <Image src="/react.svg" alt="react" height={96} width={96} priority />
+      <InfoCard title="React" content={react} hidden={true} />
+      <Image src="/csharp.svg" alt="c#" height={96} width={96} priority />
+      <InfoCard title="C#" content={csharp} hidden={true} />
+      <Image src="/rust.svg" alt="rust" height={96} width={96} priority />
+      <InfoCard title="Rust" content={rust} hidden={true} />
+      <Image src="/docker.svg" alt="docker" height={96} width={256} priority />
+      <InfoCard title="Docker" content={docker} hidden={true} />
+    </FlexColumn>
   );
 }

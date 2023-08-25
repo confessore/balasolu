@@ -1,7 +1,15 @@
+import GoogleAnalytics from "@/components/google_analytics";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Akshar } from "next/font/google";
 import Script from "next/script";
+import Backdrop from "@/components/backdrop";
+import MainWrapper from "@/components/main_wrapper";
+import Overlay from "@/components/overlay";
+import Monks from "@/components/monks";
+import Logo from "@/components/logo";
+import NavGroup from "@/components/nav_group";
+import FlexColumn from "@/components/flex_column";
 
 const akshar = Akshar({ subsets: ["latin"] });
 
@@ -19,21 +27,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={akshar.className}>{children}</body>
-      <>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-        />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-        `}
-        </Script>
-      </>
+      <body className={akshar.className}>
+        <MainWrapper>
+          <Overlay />
+          <Backdrop>
+            {children}
+            <FlexColumn>
+              <Logo />
+              <NavGroup />
+              <Monks />
+            </FlexColumn>
+          </Backdrop>
+        </MainWrapper>
+      </body>
+      <GoogleAnalytics />
     </html>
   );
 }

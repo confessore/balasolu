@@ -1,11 +1,9 @@
 import Info from "@/components/info";
-import Logo from "@/components/logo";
-import MainWrapper from "@/components/main_wrapper";
-import Monks from "@/components/monks";
-import NavGroup from "@/components/nav_group";
-import Overlay from "@/components/overlay";
+import InfoCard from "@/components/info_card";
 
-const choice = [
+const content = [
+  "Welcome to Balanced Solutions Software, your all-in-one destination for comprehensive development and hosting solutions. With a passion for innovation and technical excellence, we specialize in creating and hosting applications that cater to the needs of modern businesses.",
+  "At Balanced Solutions Software, we are your partners in innovation. From development to hosting, we provide end-to-end solutions that empower your digital presence. Let's embark on a journey to create applications that drive success. Contact us today to explore how we can transform your digital aspirations into reality.",
   "• Technical Excellence: Our skilled developers stay updated with the latest technologies to create cutting-edge applications.",
   "• User-Centric Approach: User experience is at the forefront of our design. We create intuitive interfaces that resonate with your target audience.",
   "• Reliable Hosting: Our hosting solutions guarantee uptime and security, ensuring your applications are accessible and protected.",
@@ -13,20 +11,10 @@ const choice = [
   //"• Proven Track Record: Our portfolio boasts successful projects across various industries, showcasing our expertise and versatility.",
 ];
 
-const introduction =
-  "Welcome to Balanced Solutions Software, your all-in-one destination for comprehensive development and hosting solutions. With a passion for innovation and technical excellence, we specialize in creating and hosting applications that cater to the needs of modern businesses.";
-const conclusion =
-  "At Balanced Solutions Software, we are your partners in innovation. From development to hosting, we provide end-to-end solutions that empower your digital presence. Let's embark on a journey to create applications that drive success. Contact us today to explore how we can transform your digital aspirations into reality.";
-
 export default async function Home() {
   return (
-    <MainWrapper>
-      <Overlay />
-      <Info description={introduction} />
-      <Logo />
-      <NavGroup />
-      <Info description={conclusion} />
-      <Monks />
-    </MainWrapper>
+    <>
+      <InfoCard content={content} />
+    </>
   );
 }

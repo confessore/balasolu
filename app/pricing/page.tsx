@@ -1,11 +1,6 @@
 import FlexColumn from "@/components/flex_column";
 import InfoCard from "@/components/info_card";
-import Logo from "@/components/logo";
-import MainWrapper from "@/components/main_wrapper";
 import MetaInfo from "@/components/meta_info";
-import Monks from "@/components/monks";
-import NavGroup from "@/components/nav_group";
-import Overlay from "@/components/overlay";
 import type { Metadata } from "next";
 
 const development = [
@@ -40,20 +35,14 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <MainWrapper>
-      <Overlay />
+    <FlexColumn>
       <MetaInfo title={title} description={description} />
-      <FlexColumn>
-        <InfoCard
-          title="Website Development"
-          content={development}
-          hidden={false}
-        />
-        <InfoCard title="Website Hosting" content={hosting} hidden={false} />
-      </FlexColumn>
-      <Logo />
-      <NavGroup />
-      <Monks />
-    </MainWrapper>
+      <InfoCard
+        title="Website Development"
+        content={development}
+        hidden={false}
+      />
+      <InfoCard title="Website Hosting" content={hosting} hidden={false} />
+    </FlexColumn>
   );
 }

@@ -94,5 +94,5 @@ export default function Network() {
             height={96}
             className="rounded-xl"
           />
-          <p className="text-pink-900 dark:text-pink-200">coming soon!</p>
+          <p className="text-pink-800 dark:text-pink-200">coming soon!</p>
         </div>*/
