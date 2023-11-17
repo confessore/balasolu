@@ -20,14 +20,6 @@ export default function NavGroup() {
         }
       />
       <NavLink
-        href={`/network`}
-        blank={false}
-        title={"Network"}
-        description={
-          "Of course we are going to link to some of the projects we are developing and hosting. Here, you could find exactly those."
-        }
-      />
-      <NavLink
         href={`/people`}
         blank={false}
         title={"People"}
