@@ -1,17 +1,26 @@
-import { Footer } from "flowbite-react";
+import {
+  Footer,
+  FooterCopyright,
+  FooterLink,
+  FooterLinkGroup,
+} from "flowbite-react";
 
 export default function ApplicationFooter() {
-    return (
-        <>
-            <Footer container>
-                <Footer.Copyright href="#" by="Balanced Solutions Software, Inc." year={new Date().getFullYear()} />
-                <Footer.LinkGroup>
-                    <Footer.Link href="#">About</Footer.Link>
-                    <Footer.Link href="#">Privacy Policy</Footer.Link>
-                    <Footer.Link href="#">Licensing</Footer.Link>
-                    <Footer.Link href="/contact">Contact</Footer.Link>
-                </Footer.LinkGroup>
-            </Footer>
-        </>
-    );
+  return (
+    <>
+      <Footer container>
+        <FooterCopyright
+          href="#"
+          by="Balanced Solutions Software, Inc."
+          year={new Date().getFullYear()}
+        />
+        <FooterLinkGroup>
+          <FooterLink href="/about">About</FooterLink>
+          <FooterLink href="/privacy">Privacy Policy</FooterLink>
+          <FooterLink href="/licensing">Licensing</FooterLink>
+          <FooterLink href="/contact">Contact</FooterLink>
+        </FooterLinkGroup>
+      </Footer>
+    </>
+  );
 }

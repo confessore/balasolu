@@ -11,11 +11,12 @@ import Logo from "@/components/logo";
 import NavGroup from "@/components/nav_group";
 import FlexColumn from "@/components/flex_column";
 import { Navbar, NavbarToggle } from "flowbite-react";
-import Link from "next/link"
+import Link from "next/link";
 import ApplicationNav from "@/components/application_nav";
-import Image from "next/image"
+import Image from "next/image";
 import ApplicationCarousel from "@/components/application_carousel";
 import ApplicationFooter from "@/components/application_footer";
+import { ThemeModeScript } from "flowbite-react";
 
 const akshar = Akshar({ subsets: ["latin"] });
 
@@ -33,6 +34,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <ThemeModeScript />
+      </head>
       <body className={`${akshar.className}`}>
         <ApplicationNav />
         <ApplicationCarousel />
