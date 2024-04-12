@@ -20,6 +20,9 @@ export default function ApplicationNav() {
           <NavbarLink as={Link} href="/">
             Home
           </NavbarLink>
+          <NavbarLink as={Link} href="/contact">
+            Contact
+          </NavbarLink>
           <NavbarLink as={Link} href="/pricing">
             Pricing
           </NavbarLink>
