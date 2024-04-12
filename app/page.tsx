@@ -1,5 +1,6 @@
 import Info from "@/components/info";
 import InfoCard from "@/components/info_card";
+import { Alert, Button } from "flowbite-react";
 
 const content = [
   "Welcome to Balanced Solutions Software, your all-in-one destination for comprehensive development and hosting solutions. With a passion for innovation and technical excellence, we specialize in creating and hosting applications that cater to the needs of modern businesses.",
@@ -11,7 +12,7 @@ const content = [
   //"• Proven Track Record: Our portfolio boasts successful projects across various industries, showcasing our expertise and versatility.",
 ];
 
-export default async function Home() {
+export default function Home() {
   return (
     <>
       <InfoCard content={content} />
