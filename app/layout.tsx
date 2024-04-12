@@ -10,6 +10,12 @@ import Monks from "@/components/monks";
 import Logo from "@/components/logo";
 import NavGroup from "@/components/nav_group";
 import FlexColumn from "@/components/flex_column";
+import { Navbar, NavbarToggle } from "flowbite-react";
+import Link from "next/link"
+import ApplicationNav from "@/components/application_nav";
+import Image from "next/image"
+import ApplicationCarousel from "@/components/application_carousel";
+import ApplicationFooter from "@/components/application_footer";
 
 const akshar = Akshar({ subsets: ["latin"] });
 
@@ -27,18 +33,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={akshar.className}>
-        <MainWrapper>
-          <Overlay />
-          <Backdrop>
-            {children}
-            <FlexColumn>
-              <Logo />
-              <NavGroup />
-              <Monks />
-            </FlexColumn>
-          </Backdrop>
-        </MainWrapper>
+      <body className={`${akshar.className}`}>
+        <ApplicationNav />
+        <ApplicationCarousel />
+        {children}
+        <ApplicationFooter />
       </body>
       <GoogleAnalytics />
     </html>

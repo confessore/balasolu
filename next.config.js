@@ -5,6 +5,7 @@ const nextConfig = {
       { hostname: "source.unsplash.com" },
       { hostname: "repository-images.githubusercontent.com" },
       { hostname: "twinstar-bosskills.vercel.app" },
+      { hostname: "flowbite.com" },
     ],
   },
 };
