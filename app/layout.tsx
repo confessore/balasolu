@@ -17,8 +17,6 @@ import Image from "next/image";
 import ApplicationCarousel from "@/components/application_carousel";
 import ApplicationFooter from "@/components/application_footer";
 import { ThemeModeScript } from "flowbite-react";
-import '@mantine/core/styles.css';
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 const akshar = Akshar({ subsets: ["latin"] });
 
@@ -38,15 +36,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <ThemeModeScript />
-        <ColorSchemeScript />
       </head>
       <body className={`${akshar.className}`}>
-        <MantineProvider>
-          <ApplicationNav />
-          <ApplicationCarousel />
-          {children}
-          <ApplicationFooter />
-        </MantineProvider>
+        <ApplicationNav />
+        <ApplicationCarousel />
+        {children}
+        <ApplicationFooter />
       </body>
       <GoogleAnalytics />
     </html>
