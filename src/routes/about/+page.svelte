@@ -23,11 +23,7 @@
   <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-sm border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.528l-2.384-.477a6 6 0 00-3.86.518l-3.184 8.926a4.5 4.5 0 01-9.116-.289c-.06-1.155.713-2.143 1.746-2.074l3.753.116a4 4 0 013.64 2.708l1.132-1.34a2 2 0 00.363-.846l-.486-2.44a6 6 0 011.677-4.657l3.184-8.926a6 6 0 013.86-.518l2.384.477a2 2 0 001.022-.528z"/>
-          </svg>
-        </div>
+        <img src="/favicon.svg" alt="Balanced Solutions" class="w-6 h-6" />
         <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">Balanced Solutions</span>
       </div>
       <div class="flex items-center space-x-4">
@@ -252,11 +248,7 @@
       <div class="grid md:grid-cols-4 gap-8 mb-12">
         <div class="md:col-span-2">
           <div class="flex items-center space-x-3 mb-4">
-            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.528l-2.384-.477a6 6 0 00-3.86.518l-3.184 8.926a4.5 4.5 0 01-9.116-.289c-.06-1.155.713-2.143 1.746-2.074l3.753.116a4 4 0 013.64 2.708l1.132-1.34a2 2 0 00.363-.846l-.486-2.44a6 6 0 011.677-4.657l3.184-8.926a6 6 0 013.86-.518l2.384.477a2 2 0 001.022-.528z"/>
-              </svg>
-            </div>
+            <img src="/favicon.svg" alt="Balanced Solutions" class="w-6 h-6" />
             <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
               Balanced Solutions
             </span>
