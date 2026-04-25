@@ -25,9 +25,14 @@
         <img src="/favicon.svg" alt="Balanced Solutions" class="w-6 h-6" />
         <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">Balanced Solutions</span>
       </div>
-      <a href="/contact" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition-colors text-sm">
-        Get in Touch
-      </a>
+      <div class="flex items-center space-x-4">
+        <a href="/" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Home</a>
+        <a href="/about" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">About</a>
+        <a href="/services" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Services</a>
+        <a href="/contact" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition-colors text-sm">
+          Get in Touch
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -389,7 +394,7 @@
           <ul class="space-y-2 text-slate-400">
             <li><a href="/services" class="hover:text-blue-400 transition-colors">Custom Development</a></li>
             <li><a href="/services" class="hover:text-blue-400 transition-colors">Cloud Migration</a></li>
-            <li><a href="/services" class="hover:text-blue-400 transition-colors">System Integration</a></li>
+      ``      <li><a href="/services" class="hover:text-blue-400 transition-colors">System Integration</a></li>
             <li><a href="/services" class="hover:text-blue-400 transition-colors">Team Augmentation</a></li>
           </ul>
         </div>
