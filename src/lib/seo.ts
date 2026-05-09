@@ -18,32 +18,32 @@ export function getBaseUrl(): string {
  * SEO configuration interface.
  */
 export interface SeoConfig {
-	title: string;
-	description?: string;
-	canonicalUrl?: string;
-	ogType?: 'website' | 'article' | 'profile' | 'book';
-	ogImage?: string;
-	ogLocale?: string;
-	twitterCard?: 'summary' | 'summary_large_image';
-	twitterSite?: string;
-	breadcrumbs?: Array<{ name: string; url: string }>;
-	imageAlt?: string;
+  title: string;
+  description?: string;
+  canonicalUrl?: string;
+  ogType?: 'website' | 'article' | 'profile' | 'book';
+  ogImage?: string;
+  ogLocale?: string;
+  breadcrumbs?: Array<{ name: string; url: string }>;
+  imageAlt?: string;
 }
 
 /**
  * Generates all SEO-related <svelte:head> content from a configuration object.
  */
 export function getSeoHead(config: SeoConfig) {
-	const baseUrl = config.canonicalUrl && !config.canonicalUrl.startsWith('http://') && !config.canonicalUrl.startsWith('https://')
-		? `${getBaseUrl()}${config.canonicalUrl}`
-		: (config.canonicalUrl || getBaseUrl());
+	const baseUrl =
+		config.canonicalUrl &&
+		!config.canonicalUrl.startsWith('http://') &&
+		!config.canonicalUrl.startsWith('https://')
+			? `${getBaseUrl()}${config.canonicalUrl}`
+			: config.canonicalUrl || getBaseUrl();
 
 	const fullTitle = config.title;
 	const description = config.description || '';
-	const ogType = config.ogType || 'website';
-	const ogImage = config.ogImage || `${getBaseUrl()}/static/og-image.png`;
-	const twitterCard = config.twitterCard || 'summary_large_image';
-	const imageAlt = config.imageAlt || fullTitle;
+  const ogType = config.ogType || 'website';
+  const ogImage = config.ogImage || `${getBaseUrl()}/static/og-image.svg`;
+  const imageAlt = config.imageAlt || fullTitle;
 
 	// Build structured JSON-LD breadcrumbs if provided
 	let jsonLdBreadcrumbs: string | undefined;
@@ -58,7 +58,7 @@ export function getSeoHead(config: SeoConfig) {
 </script>`;
 	}
 
-	return `
+  return `
 <title>${escapeHtml(fullTitle)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 <link rel="canonical" href="${baseUrl}">
@@ -69,11 +69,6 @@ export function getSeoHead(config: SeoConfig) {
 <meta property="og:description" content="${escapeHtml(description)}">
 <meta property="og:image" content="${ogImage}">
 <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
-<!-- Twitter -->
-<meta name="twitter:card" content="${twitterCard}">
-${config.twitterSite ? `<meta name="twitter:site" content="@${config.twitterSite.replace(/^@/, '')}">\n` : ''}<meta property="twitter:title" content="${escapeHtml(fullTitle)}">
-<meta property="twitter:description" content="${escapeHtml(description)}">
-<meta property="twitter:image" content="${ogImage}">
 ${jsonLdBreadcrumbs || ''}
 `.trim();
 }

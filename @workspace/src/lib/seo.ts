@@ -34,9 +34,12 @@ export interface SeoConfig {
  * Generates all SEO-related <svelte:head> content from a configuration object.
  */
 export function getSeoHead(config: SeoConfig) {
-	const baseUrl = config.canonicalUrl && !config.canonicalUrl.startsWith('http://') && !config.canonicalUrl.startsWith('https://')
-		? `${getBaseUrl()}${config.canonicalUrl}`
-		: (config.canonicalUrl || getBaseUrl());
+	const baseUrl =
+		config.canonicalUrl &&
+		!config.canonicalUrl.startsWith('http://') &&
+		!config.canonicalUrl.startsWith('https://')
+			? `${getBaseUrl()}${config.canonicalUrl}`
+			: config.canonicalUrl || getBaseUrl();
 
 	const fullTitle = config.title;
 	const description = config.description || '';
