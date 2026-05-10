@@ -381,20 +381,31 @@
 					<h3 class="mb-4 font-semibold text-white">Services</h3>
 					<ul class="space-y-2 text-slate-400">
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400"
+							<a href="/services/development" class="transition-colors hover:text-blue-400"
 								>Custom Development</a
 							>
 						</li>
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400">Cloud Migration</a>
+							<a href="/services/cloud-migration" class="transition-colors hover:text-blue-400"
+								>Cloud Migration</a
+							>
 						</li>
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400"
+							<a href="/services/integration" class="transition-colors hover:text-blue-400"
 								>System Integration</a
 							>
 						</li>
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400">Team Augmentation</a
+							<a href="/services/data-analytics" class="transition-colors hover:text-blue-400"
+								>Data Analytics</a
+							>
+						</li>
+						<li>
+							<a href="/services/qa" class="transition-colors hover:text-blue-400">QA</a>
+						</li>
+						<li>
+							<a href="/services/augmentation" class="transition-colors hover:text-blue-400"
+								>Team Augmentation</a
 							>
 						</li>
 					</ul>

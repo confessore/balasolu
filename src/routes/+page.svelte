@@ -279,8 +279,8 @@
 					<p class="mb-4 text-sm text-slate-400">
 						Bespoke software solutions built for your specific needs.
 					</p>
-					<a href="/contact" class="text-sm font-medium text-blue-400 hover:text-blue-300"
-						>Discuss Your Project →</a
+					<a href="/services/development" class="text-sm font-medium text-blue-400 hover:text-blue-300"
+						>Learn More →</a
 					>
 				</div>
 
@@ -306,8 +306,8 @@
 					<p class="mb-4 text-sm text-slate-400">
 						Migrate to AWS with security and compliance in mind.
 					</p>
-					<a href="/contact" class="text-sm font-medium text-blue-400 hover:text-blue-300"
-						>Start Migration →</a
+					<a href="/services/cloud-migration" class="text-sm font-medium text-blue-400 hover:text-blue-300"
+						>Learn More →</a
 					>
 				</div>
 
@@ -333,8 +333,8 @@
 					<p class="mb-4 text-sm text-slate-400">
 						Connect your systems with APIs, microservices, and messaging platforms.
 					</p>
-					<a href="/contact" class="text-sm font-medium text-blue-400 hover:text-blue-300"
-						>Explore Integration →</a
+					<a href="/services/integration" class="text-sm font-medium text-blue-400 hover:text-blue-300"
+						>Learn More →</a
 					>
 				</div>
 
@@ -360,8 +360,8 @@
 					<p class="mb-4 text-sm text-slate-400">
 						Build data pipelines and analytics platforms for your business.
 					</p>
-					<a href="/contact" class="text-sm font-medium text-blue-400 hover:text-blue-300"
-						>View Solutions →</a
+					<a href="/services/data-analytics" class="text-sm font-medium text-blue-400 hover:text-blue-300"
+						>Learn More →</a
 					>
 				</div>
 
@@ -387,8 +387,8 @@
 					<p class="mb-4 text-sm text-slate-400">
 						Testing and CI/CD pipelines to ensure your software is production-ready.
 					</p>
-					<a href="/contact" class="text-sm font-medium text-blue-400 hover:text-blue-300"
-						>Learn About QA →</a
+					<a href="/services/qa" class="text-sm font-medium text-blue-400 hover:text-blue-300"
+						>Learn More →</a
 					>
 				</div>
 
@@ -414,8 +414,8 @@
 					<p class="mb-4 text-sm text-slate-400">
 						Scale your team with our engineers on a flexible, contract basis.
 					</p>
-					<a href="/contact" class="text-sm font-medium text-blue-400 hover:text-blue-300"
-						>Add Developers →</a
+					<a href="/services/augmentation" class="text-sm font-medium text-blue-400 hover:text-blue-300"
+						>Learn More →</a
 					>
 				</div>
 			</div>
@@ -636,21 +636,31 @@
 					<h3 class="mb-4 font-semibold text-white">Services</h3>
 					<ul class="space-y-2 text-slate-400">
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400"
+							<a href="/services/development" class="transition-colors hover:text-blue-400"
 								>Custom Development</a
 							>
 						</li>
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400">Cloud Migration</a>
+							<a href="/services/cloud-migration" class="transition-colors hover:text-blue-400"
+								>Cloud Migration</a
+							>
 						</li>
-						``
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400"
+							<a href="/services/integration" class="transition-colors hover:text-blue-400"
 								>System Integration</a
 							>
 						</li>
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400">Team Augmentation</a
+							<a href="/services/data-analytics" class="transition-colors hover:text-blue-400"
+								>Data Analytics</a
+							>
+						</li>
+						<li>
+							<a href="/services/qa" class="transition-colors hover:text-blue-400">QA</a>
+						</li>
+						<li>
+							<a href="/services/augmentation" class="transition-colors hover:text-blue-400"
+								>Team Augmentation</a
 							>
 						</li>
 					</ul>
