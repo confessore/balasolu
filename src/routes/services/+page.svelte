@@ -114,10 +114,10 @@
 						</li>
 					</ul>
 					<a
-						href="/contact"
+						href="/services/development"
 						class="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300"
 					>
-						Discuss Your Project
+						Learn More
 						<svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path
 								stroke-linecap="round"
@@ -200,10 +200,10 @@
 						</li>
 					</ul>
 					<a
-						href="/contact"
+						href="/services/cloud-migration"
 						class="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300"
 					>
-						Start Migration
+						Learn More
 						<svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path
 								stroke-linecap="round"
@@ -286,10 +286,10 @@
 						</li>
 					</ul>
 					<a
-						href="/contact"
+						href="/services/integration"
 						class="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300"
 					>
-						Explore Integration
+						Learn More
 						<svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path
 								stroke-linecap="round"
@@ -372,10 +372,10 @@
 						</li>
 					</ul>
 					<a
-						href="/contact"
+						href="/services/data-analytics"
 						class="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300"
 					>
-						View Solutions
+						Learn More
 						<svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path
 								stroke-linecap="round"
@@ -458,10 +458,10 @@
 						</li>
 					</ul>
 					<a
-						href="/contact"
+						href="/services/qa"
 						class="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300"
 					>
-						Learn About QA
+						Learn More
 						<svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path
 								stroke-linecap="round"
@@ -544,10 +544,10 @@
 						</li>
 					</ul>
 					<a
-						href="/contact"
+						href="/services/augmentation"
 						class="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300"
 					>
-						Add Developers
+						Learn More
 						<svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path
 								stroke-linecap="round"
@@ -701,20 +701,31 @@
 					<h3 class="mb-4 font-semibold text-white">Services</h3>
 					<ul class="space-y-2 text-slate-400">
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400"
+							<a href="/services/development" class="transition-colors hover:text-blue-400"
 								>Custom Development</a
 							>
 						</li>
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400">Cloud Migration</a>
+							<a href="/services/cloud-migration" class="transition-colors hover:text-blue-400"
+								>Cloud Migration</a
+							>
 						</li>
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400"
+							<a href="/services/integration" class="transition-colors hover:text-blue-400"
 								>System Integration</a
 							>
 						</li>
 						<li>
-							<a href="/services" class="transition-colors hover:text-blue-400">Team Augmentation</a
+							<a href="/services/data-analytics" class="transition-colors hover:text-blue-400"
+								>Data Analytics</a
+							>
+						</li>
+						<li>
+							<a href="/services/qa" class="transition-colors hover:text-blue-400">QA</a>
+						</li>
+						<li>
+							<a href="/services/augmentation" class="transition-colors hover:text-blue-400"
+								>Team Augmentation</a
 							>
 						</li>
 					</ul>
